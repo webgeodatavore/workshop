@@ -1,14 +1,14 @@
-## Selecting Features
+## Sélectionner des objets géographiques
 
-As we've seen in the layers module, we can pull features as vectors and draw them on top of a base map. One of the advantages of serving vector data is that users can interact with the data. In this example, we create a vector layer where users can select and view feature information.
+Comme nous l'avons vu dans le module sur les couches, nous pouvons récupérer des objets géographiques comme des vecteurs et les dessinez par dessus une carte en fond dite "base". Un des avantages de servir des données vecteur est que les utilisateurs peuvent interagir avec la donnée. Dans cet exemple, nous créons une couche vecteur où les utilisateurs peuvent sélectionner et voir les informations des objets géographiques.
 
-The previous example demonstrated the use of an `ol.control.Control` on the map.  Controls have a visual representation on the map or add DOM elements to the document.  An `ol.interaction.Interaction` is responsible for handling user interaction, but typically has no visual representation.  This example demonstrates the use of the `ol.interaction.Select` for interacting with features from vector layers.
+L'exemple précédent faisait la démonstration de l'utilisation d'un `ol.control.Control` sur la carte.  Les `controls` ont une représentation visuelle sur la carte ou ajoute des éléments DOM au document.  Une `ol.interaction.Interaction` est responsable de gérer les interactions utilisateurs, mais typiquement sans représentation visuelle.  Cet exemple montre l'utilisation d'une `ol.interaction.Select` pour interagir avec les objets géographiques de couches vecteur.
 
-## Create a Vector Layer and a Select Interaction
+## Créer un couche vecteur et une interaction de type `Select`
 
-### Tasks
+### Tâches
 
-1. Let's start with the vector layer example from a [previous section](../layers/vector.md).  Open `map.html` in your text editor and make sure it looks something like the following:
+1. Commençons avec l'exemple avec la couche vecteur de la [section précédente](../layers/vector.md).  Ouvrez `map.html` dans votre éditeur de texte et assurez-vous qu'il ressemble à quelque chose comme suivant:
 
   ```html
   <!doctype html>
@@ -81,8 +81,8 @@ The previous example demonstrated the use of an `ol.control.Control` on the map.
       </script>
     </body>
   </html>
-  ```        
+  ```
 
-1.  Save your changes to `map.html` and open the page in your browser:  {{ book.workshopUrl }}/map.html. To see feature selection in action, use the mouse-click to select an earthquake:
+2.  Sauvez vos changements de `map.html` et ouvrez la page dans votre navigateur:  {{ book.workshopUrl }}/map.html. Pour voir la sélection d'objets géographiques en action, utilisez le clic souris pour sélectionner un tremblement de terre:
 
-  ![Using an interaction to select features from a vector layer](select1.png)
+  ![Utilisation d'une interaction pour sélectionner les objets géographiques issus d'une couche vecteur](select1.png)

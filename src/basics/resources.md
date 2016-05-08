@@ -1,40 +1,40 @@
-# OpenLayers Resources
+# Ressources OpenLayers utiles
 
-The OpenLayers library contains a wealth of functionality. Though the developers have worked hard to provide examples of that functionality and have organized the code in a way that allows other experienced developers to find their way around, many users find it a challenge to get started from scratch.
+La bibliothèque OpenLayers contient de riches fonctionnalités. Bien que les développeurs aient travaillés durs pour fournir des exemples des fonctionnalités et aient organisés le code d'une manière qui permette à d'autres développeurs expérimentés de trouver leur chemin, de nombreux utilisateurs trouvent que c'est un challenge de partir de rien.
 
-## Learn by Example
+## Apprendre par l'exemple
 
-New users will most likely find diving into the OpenLayer's example code and experimenting with the library's possible functionality the most useful way to begin.
+Les nouveaux utilisateurs trouveront probablement que plonger dans les exemples de code OpenLayers et expérimenter avec les possibilités de fonctionnalités de la bibliothèque est la voie la plus facile pour débuter.
 
 * http://openlayers.org/en/master/examples/
 
-## Browse the Documentation
+## Explorer la documentation
 
-For further information on specific topics, browse the growing collection of OpenLayers  documentation.
+Pour plus d'informations sur des sujets spécifiques, naviguer la collection grandissante de documentation pour OpenLayers.
 
 * http://openlayers.org/en/master/doc/quickstart.html
 * http://openlayers.org/en/master/doc/tutorials
 
-## Find the API Reference
+## Trouver la référence de l'API
 
-After understanding the basic components that make-up and control a map, search the API reference documentation for details on method signatures and object properties. If you only want to see the stable part of the API, make sure to check the `Stable Only` checkbox.
+Après avoir compris les composants de base qui constituent et contrôlent une carte, cherchez la documentation de référence de l'API pour les détails sur les signatures des méthodes et les propriétés des objets. Si vous voulez voir seulement la partie stable de l'API, assurez-vous de vérifier que vous avez coché la case à cocher `Stable Only`.
 
 * http://openlayers.org/en/master/apidoc/
 
-## Join the Community
+## Rejoigner la communauté
 
-OpenLayers is supported and maintained by a community of developers and users like you. Whether you have questions to ask or code to contribute, you can get involved by using the `openlayers-3` tag on StackOverflow for usage questions or signing up for the developers mailing list.
+OpenLayers est supportée et maintenue par une communauté de développeurs et d'utilisateurs comme vous. Que vous ayez des questions à demander ou du code pour contribuer, vous pouvez vous impliquer en utilisant le tag `openlayers-3` sur StackOverflow pour les questions relatives aux usages ou vous inscrire à la liste de développement du projet.
 
 * http://stackoverflow.com/questions/tagged/openlayers-3
 * https://groups.google.com/forum/#!forum/ol3-dev
 
-## Reporting issues
+## Remonter des dysfonctionnements/problèmes
 
-For reporting issues it is important to understand the several flavours in which the OpenLayers library is distributed:
+Pour remonter des problèmes, il est important de comprendre les différentes versions de la bibliothèque 'OpenLayers qui sont distribuées:
 
-* `ol.js` - the script which is built using the Closure Compiler in advanced mode (not human readable)
-* `ol-debug.js` - human readable version to be used during development
+* `ol.js` - le script qui est créé avec Closure Compiler en mode avancé (non lisible par un humain)
+* `ol-debug.js` - version lisible par un humain pouvant être utilisée lors du développement
 
-When you encounter an issue, it is important to report the issue using `ol-debug.js`. Also include the full stack trace which you can find using Web Developer tools such as Chrome's Developer Tools. To test this out we are going to make a mistake in map.html by changing `ol.layer.Tile` into `ol.layer.Image`. The error you will see is: `Uncaught TypeError: undefined is not a function`. If you report this to the mailing list, nobody will know what it means. So first, we are going to change the script tag which points to `ol.js` to point to `ol-debug.js` instead. Reload the page. The debugger will now stop on the error, and we can see the full stack trace.
+Quand vous rencontrez une erreur/un problème, il est important de la reporter en utilisant `ol-debug.js`. Incluez aussi la trace complète que vous pouvez trouver en utilisant les outils de développement Web comme les `Developer Tools` de Chrome. Pour tester cela, nous allons commettre une erreur dans map.html en changeant `ol.layer.Tile` par `ol.layer.Image`. L'erreur que vous allez voir sera: `Uncaught TypeError: undefined is not a function`. Si vous remontez cette erreur sur la liste de discussion, personne ne saura ce que cela signifie. En premier, nous allons changer la balise `script` qui pointe vers `ol.js` pour qu'elle pointe vers `ol-debug.js` à la place. Rechargez la page. Le debugger doit maintenant s'arrêter sur l'erreur et nous pouvons voir la trace complète.
 
-![At a breakpoint in the debugger](debugger.png)
+![A un point d'arrêt dans le debugger](debugger.png)

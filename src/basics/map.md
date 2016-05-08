@@ -1,10 +1,10 @@
-# Creating a Map
+# Créez une carte
 
-In OpenLayers, a map is a collection of layers and various interactions and controls for dealing with user interaction. A map is generated with three basic ingredients: markup, style declarations, and initialization code.
+Dans OpenLayers, une carte est une collection de couches avec plusieurs `interactions` et `controls` pour gérer les interactions utilisateurs. Une carte est générée avec trois ingrédients basiques: les balises, les déclarations de style et l'initialisation du code.
 
-## Working Example
+## Exemple fonctionnel
 
-Let's take a look at a fully working example of an OpenLayers 3 map.
+Jetons un oeil à un exemple pleinement fonctionnel d'une carte OpenLayers 3.
 
 ```html
 <!doctype html>
@@ -47,14 +47,14 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
 </html>
 ```
 
-### Tasks
+### Tâches
 
-1.  Make sure you've completed the [setup instructions](../) to install dependencies and get the debug server running.
+1.  Assurez-vous d'avoir bien complété les [instructions de configuration](../) pour installer les dépendances et avoir le serveur de debug qui puisse fonctionner.
 
-1.  Copy the text above into a new file called `map.html`, and save it in the root of the workshop directory.
+1.  Copiez le texte ci-dessus dans un nouveau fichier appelé `map.html`, et sauvez le à la racine du répertoire du workshop.
 
-1.  Open the working map in your web browser: {{ book.workshopUrl }}/map.html
+1.  Ouvrir la carte dans votre navigateur web: {{ book.workshopUrl }}/map.html
 
-![A working map displaying imagery of the world](map1.png)
+![Un carte fonctionnelle affichant une image du monde](map1.png)
 
-Having successfully created our first map, we'll continue by looking more closely at [the parts](./dissect.md).
+Après avoir créé avec succès votre première carte, nous allons continuer en regardant plus précisément aux [différentes parties](./dissect.md).

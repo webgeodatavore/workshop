@@ -1,14 +1,14 @@
-# Modifying Features
+# Modifier des objets géographiques
 
-Modifying features works by using an `ol.interaction.Select` in combination with an `ol.interaction.Modify`. They share a common collection (`ol.Collection`) of features. Features selected with the `ol.interaction.Select` become candidates for modifications with the `ol.interaction.Modify`.
+La modification des objets géographiques fonctionne en utilisant une `ol.interaction.Select` combinée avec une `ol.interaction.Modify`. Elles partagent une collection (`ol.Collection`) en commun d'objets géographiques. Les objets géographiques sélectionnés avec `ol.interaction.Select` deviennent des candidats aux modifications avec `ol.interaction.Modify`.
 
-## Create a Vector Layer and a Modify Interaction
+## Créer une couche vecteur et une interaction de type `Modify`
 
-### Tasks
+### Tâches
 
-1. Let's start with the working example.  Open `map.html` in your text editor and make sure it looks something like the following:
+1. Commencez avec un exemple qui fonctionne.  Ouvrez `map.html` dans votre éditeur de texte et assurez vous qu'il ressemble à ce qui suit:
 
-  ```html  
+  ```html
   <!doctype html>
   <html lang="en">
     <head>
@@ -83,13 +83,13 @@ Modifying features works by using an `ol.interaction.Select` in combination with
       </script>
     </body>
   </html>
-  ```        
+  ```
 
-1.  Save your changes to `map.html` and open the page in your browser:  {{ book.workshopUrl }}/map.html. To see feature modification in action, use the mouse-click to select an earth quake and then drag to move the point.
+2.  Sauvez vos changements de `map.html` et ouvrez la page dans votre navigateur:  {{ book.workshopUrl }}/map.html. Pour voir la modification des objets géographiques en action, utilisez le clic souris pour sélectionner un tremblement de terre et ensuite bougez pour déplacer le point.
 
-## A Closer Look
+## Examen de détails
 
-Let's examine how modifying features works.
+Examinons comment la modification des objets géographiques fonctionne.
 
 ```js
   var style = new ol.style.Style({
@@ -111,4 +111,4 @@ Let's examine how modifying features works.
   });
 ```
 
-We create 2 interactions, an `ol.interaction.Select` to select the features before modifying them, and an `ol.interaction.Modify` to actually modify the geometries. They share the same `ol.Collection` of features. Features selected using `ol.interaction.Modify` become candidates for modification with the `ol.interaction.Modify`. As previously, the `ol.interaction.Select` is configured with a style object, which effectively defines the style used for drawing selected features. When the user clicks in the map again, the feature will be drawn using the layer's style.
+Nous créons 2 interactions, une `ol.interaction.Select` pour sélectionner les objets géographiques avant de les modifier, et une `ol.interaction.Modify` pour modifier réellement les géometries. Elles partagent la même `ol.Collection` d'objets géographiques. Les objets géographiques sélectionnés en utilisant `ol.interaction.Modify` deviennent candidats à la modification avec the `ol.interaction.Modify`. Comme précédemment, `ol.interaction.Select` est configuré avec une objet `style`, qui définiy effectivement le style utilisé pour dessiner les objets géographiques sélectionnés. Quand un utilisateur clique sur la carte à nouveau, l'objet géographique est dessiné en utilisant le style de la couche.

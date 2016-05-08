@@ -1,14 +1,14 @@
-# Working with Vector Formats
+# Travailler avec les formats vecteur
 
-The base `ol.layer.Vector` constructor provides a fairly flexible layer type. By default, when you create a new vector layer, no assumptions are made about where the features for the layer will come from, since this is the domain of `ol.source.Vector`.  Before getting into styling vector features, this section introduces the basics of vector formats.
+Le constructeur "de base" `ol.layer.Vector` fournit un type de couche plutôt flexible. Par défaut, quand vous créez une nouvelle couche vecteur, aucune présupposition n'est faite concernant d'où les objets géographiques pour la couche seront fournis, comme c'est du domaine de `ol.source.Vector`.  Avant de nous engager dans le stylage des objets géographiques vecteur, cette section introduit les basiques des formats vecteur.
 
 ## `ol.format`
 
-The `ol.format` classes in OpenLayers 3 are responsible for parsing data from the server representing vector features. The format turns raw feature data into `ol.Feature` objects.
+Les classes `ol.format` dans OpenLayers 3 sont responsables du parsing des données venant du serveur et représentant les objets géographiques vecteur. Le format transforme un objet géographique brut en objets `ol.Feature`.
 
-Consider the two blocks of data below. Both represent the same `ol.Feature` object (a point in Barcelona, Spain). The first is serialized as [GeoJSON](http://geojson.org>) (using the `ol.format.GeoJSON` parser). The second is serialized as KML (OGC Keyhole Markup Language) (using the `ol.format.KML` parser).
+Considérons les deux blocs de données ci-dessous. Les deux représentent le même objet `ol.Feature` (un point à Barcelone, Espagne). Le premier est sérialisé comme [GeoJSON](http://geojson.org>) (en utilisant le parser `ol.format.GeoJSON`). Le second est sérialisé comme KML (OGC Keyhole Markup Language) (en utilisant le parser `ol.format.KML`).
 
-### GeoJSON Example
+### Exemple GeoJSON
 
 ```json
 {
@@ -22,7 +22,7 @@ Consider the two blocks of data below. Both represent the same `ol.Feature` obje
 }
 ```
 
-### KML Example
+### Exemple KML
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

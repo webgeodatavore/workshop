@@ -1,12 +1,12 @@
-# Drawing Features
+# Dessiner des objets géographiques
 
-New features can be drawn by using an `ol.interaction.Draw`. A draw interaction is constructed with a vector source and a geometry type.
+De nouveaux objets géographiques peuvent être dessinés en utilisant une `ol.interaction.Draw`. Une interaction de dessin est construite avec une source vecteur et un type de géométrie.
 
-## Create a Vector Layer and a Draw Interaction
+## Créer une couche vecteur et une interaction de type `Draw`
 
-### Tasks
+### Tâches
 
-1.  Let's start with the example below. Open `map.html` in your text editor and make sure it looks something like the following:
+1.  Commençons avec l'exemple ci-dessous. Ouvrez `map.html` dans votre éditeur de texte et assurez-vous qu'il ressemble à ce qui suit:
 
   ```html
     <!doctype html>
@@ -72,17 +72,17 @@ New features can be drawn by using an `ol.interaction.Draw`. A draw interaction 
     </html>
   ```
 
-1.  Save your changes to `map.html` and open the page in your browser:  {{ book.workshopUrl }}/map.html. To see drawing of point geometries in action, click in the map to add a new feature:
+2.  Sauvez vos changements dans `map.html` et ouvrez la page dans votre navigateur:  {{ book.workshopUrl }}/map.html. Pour voir, le dessin de géométries de type point en action, clicquez sur la carte pour ajouter un nouvel objet géographique:
 
-  ![Using a draw interaction to add features to a vector source](draw1.png)
+  ![Utilisation d'une interaction de dessin pour ajouter un objet géographique à la source vecteur](draw1.png)
 
-### Bonus Tasks
+### Tâches bonus
 
-1.  Create a listener which gets the new feature's X and Y after it is drawn.
+1.  Créez un "écouteur" d'événement qui récupère les coordonnées X et Y du nouvel objet géographique après qu'il ait été dessiné.
 
 ### Solutions
 
-Here is a solution for the first bonus task. In it we register an event listener for the `drawend` event of the `ol.interaction.Draw`. This method logs the feature's X and Y to the developer console:
+Voici une solution pour la première tâche bonus. Dedans, nous assignons un écouteur d'événement pour l'événement `drawend` de `ol.interaction.Draw`. Cette méthode enregistre les X et Y de l'objet géographique dans la console des outils de développement du navigateur:
 
 ```js
 draw.on('drawend', function(evt){

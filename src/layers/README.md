@@ -1,7 +1,7 @@
-# Layers and Sources
+# Les couches et les sources
 
-* [WMS sources](wms.md)
-* [Tiled sources](cached.md)
-* [Proprietary tile providers](proprietary.md)
-* [Vector data](vector.md)
-* [Image vector source](imagevector.md)
+* [Sources WMS](wms.md)
+* [Sources tuilées](cached.md)
+* [Fournisseurs de tuiles propriétaires](proprietary.md)
+* [Données vecteur](vector.md)
+* [Source image vecteur](imagevector.md)

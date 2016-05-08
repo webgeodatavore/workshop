@@ -1,5 +1,5 @@
-# Basics
+# Les basiques
 
-* [Creating a map](map.md)
-* [Dissecting your map](dissect.md)
-* [Useful resources](resources.md)
+* [Créez une carte](map.md)
+* [Disséquez votre carte](dissect.md)
+* [Ressources OpenLayers utiles](resources.md)

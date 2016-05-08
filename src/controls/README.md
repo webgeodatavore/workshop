@@ -1,6 +1,6 @@
-# Controls and interactions
+# Les `Controls` et les `Interactions`
 
- * [Scale line control](scaleline.md)
- * [Select interaction](select.md)
- * [Draw interaction](draw.md)
- * [Modify interaction](modify.md)
+ * [Le `Control` barre d'échelle `ScaleLine`](scaleline.md)
+ * [L'interaction de sélection `Select`](select.md)
+ * [L'interaction de dessin `Draw`](draw.md)
+ * [L'interaction de modification `Modify`](modify.md)

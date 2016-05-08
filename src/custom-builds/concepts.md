@@ -1,34 +1,22 @@
-# Understanding custom builds
+# Comprendre les `build` personnalisés
 
-OpenLayers 3 is a big library providing a lot of functionality. So it is
-unlikely that an application will need and use all the functionality OpenLayers
-3 provides. Custom builds (a.k.a. application-specific builds) are OpenLayers
-3 builds with just the functionality your application needs. Custom builds are
-often much smaller that the full build, so creating custom builds is often
-a very good idea.
+OpenLayers 3 est une grosse bibliothèque qui fournit de nombreuses fonctionnalités.
+Ainsi, il est peu probable qu'une application nécessite et utilise toutes les
+ fonctionnalités qu'OpenLayers fournit. Les `build` personnalisés (c'est à dire `build` spécifiques à une application) sont des `build` OpenLayers 3 qui   embarquent juste les fonctionnalités que votre application a besoin.
+ Les `build` personnalisés sont souvent plus petits que les `build` complets. Ainsi, créer des `build` personnalisés est souvent une très bonne idée.
 
-## Requirements
+## Pré-requis
 
-OpenLayers 3 builds are created by using the [Closure
-Compiler](https://developers.google.com/closure/compiler/). The goal of the
-Closure Compiler is to compile JavaScript to better JavaScript, that takes less
-time to downoad and run faster.
+Les `build` OpenLayers 3 sont créés en utilisant [Closure
+Compiler](https://developers.google.com/closure/compiler/). Le but de Closure Compiler est de compiler le JavaScript en un JavaScript meilleur, qui prend moins de temps à télécharger et fonctionne plus vite.
 
-The Closure Compiler is a Java program, so running the Compiler requires a Java
-Virtual Machine. So before jumping to the next section, and creating a custom
-build, make sure Java is installed on your machine.
+Closure Compiler est un programme en Java. Ainsi pour qu'il fonctionne, Closure Compiler nécessite une machine virtuelle Java. De ca fait, avant de passer à la section suivante et de créer un `build` personnalisé, assurez-vous que Java est installé sur votre machine.
 
-You just need the Java Runtime Environment, which you can download from the
-[Oracle Java
-site](http://www.oracle.com/technetwork/java/javase/downloads/index.html). For
-example, for Windows, you would download and install
-`jre-8u60-windows-i586.exe`.
+Vous avez juste besoin du Java Runtime Environment (JRE), que vous pouvez télécharger  depuis [le site Java de Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Par exemple, pour Windows, vous téléchargeriez et installeriez `jre-8u92-windows-x64.exe`.
 
-## Build configuration file
+## Fichier de configuration du `build`
 
-Creating a custom build requires writing a build configuration file. The format
-of build configuration files is JSON. Here is a simple example of a build
-configuration file:
+Créez un `build` personnalisé nécessite d'écrire un fichier de configuration pour le `build`. Le format de ce fichier de configuration de `build` est le JSON. Voici un exemple simple de fichier de configuration de `build`:
 
 ```js
 {
@@ -63,7 +51,8 @@ configuration file:
     "jscomp_off": [
       "useOfGoogBase",
       "unnecessaryCasts",
-      "lintChecks"
+      "lintChecks",
+      "analyzerChecks"
     ],
     "extra_annotation_name": [
       "api", "observable"
@@ -76,10 +65,9 @@ configuration file:
 }
 ```
 
-The most relevant part of this configuration object is the `exports` array.
-This array declares the functions/constructors you use in your JavaScript code.
-For example, the above configuration file is what you'd use for the following
-JavaScript code:
+La partie la plus importante de cet objet de configuration est le tableau `exports`.
+Ce tableau déclare les fonctions/constructeurs que vous utilisez dans votre code JavaScript.
+Par exemple, le fichier de configuration au dessus est ce que vous utiliseriez pour le code JavaScript suivant:
 
 ```js
 var map = new ol.Map({

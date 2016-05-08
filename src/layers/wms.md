@@ -1,15 +1,14 @@
-# Web Map Service Layers
+# Couches "Web Map Service" (WMS)
 
-When you add a layer to your map, the layer's source is typically responsible for fetching the data to be displayed. The data requested can be either raster or vector data. You can think of raster data as information rendered as an image on the server side. Vector data is delivered as structured information from the server and may be rendered for display on the client (your browser).
+Quand vous ajoutez une couche à votre carte, la source de la couche est responsable typiquement d'appeler la donnée qui doit être affichée. La donnée demandée peut être soit raster, soit vecteur. Vous pouvez assimiler une donnée raster comme une information rendue comme une image côté serveur. La donnée vecteur est délivrée comme une information structurée depuis le serveur et peut potentiellement être calculée pour l'affichage via le client (votre navigateur).
 
-There are many different types of services that provide raster map data. This section deals with providers that conform with the OGC (Open Geospatial Consortium, Inc.) [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) specification.
+Il y a  de nombreux types de services qui fournissent des données cartographiques raster. Cette section traite des fournisseurs qui se conforment à la spécification [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) de l'OGC (Open Geospatial Consortium, Inc.).
 
-## Creating a Layer
+## Créez une couche
 
-We'll start with a fully working map example and modify the layers to get an
-understanding of how they work.
+Nous allons commencer avec un exemple complet de carte et modifier les couches pour pour avoir la compréhension de comment elles fonctionnent.
 
-Let's take a look at the following code:
+Jetez un oeil au code suivant:
 
 ```html
 <!doctype html>
@@ -52,25 +51,25 @@ Let's take a look at the following code:
 </html>
 ```
 
-### Tasks
+### Tâches
 
-1. If you haven't already done so, save the text above as `map.html` in the root of your workshop directory.
+1. Si vous ne l'avez pas déjà fait, sauvez le texte ci-dessus comme `map.html` à la racine de votre répertoire workshop.
 
-1. Open the page in your browser to confirm things work: {{ book.workshopUrl }}/map.html
+1. Ouvrez la page dans votre navigateur pour confirmer que les choses fonctionnent: {{ book.workshopUrl }}/map.html
 
-## The `ol.layer.Tile` Constructor
+## Le constructeur `ol.layer.Tile`
 
-The `ol.layer.Tile` constructor gets an object literal of type `olx.layer.TileOptions` see: http://openlayers.org/en/master/apidoc/ol.layer.Tile.html
-In this case we are providing the source key of the options with an `ol.source.TileWMS`.
-A human-readable title for the layer can be provided with the title key, but basically any arbitrary name for the key can be used here.
-In OpenLayers 3 there is a separation between layers and sources, whereas in OpenLayers 2 this was all part of the layer.
+Le constructeur `ol.layer.Tile` nécessite un objet littéral de type `olx.layer.TileOptions` voir: http://openlayers.org/en/master/apidoc/ol.layer.Tile.html
+Dans ce cas, nous complétons la clé `source` des options avec une `ol.source.TileWMS`.
+Un titre lisible par les humains pour la couche peut être fournie avec la clé `title`, mais n'importe quel nom pour la clé peut être utilisée ici.
+Dans OpenLayers 3, il y a une séparation entre les couches et les sources alors que dans Openlayers 2, l'ensemble faisait partie d'une couche.
 
-`ol.layer.Tile` represents a regular grid of images, `ol.layer.Image` represents a single image. Depending on the layer type, you would use a different source (`ol.source.TileWMS` versus `ol.source.ImageWMS`) as well.
+`ol.layer.Tile` représente un grille régulière d'images, `ol.layer.Image` représente une image seule. En fonction du type de couche, vous devrez ajouter une source différente (`ol.source.TileWMS` versus `ol.source.ImageWMS`) également.
 
-## The ol.source.TileWMS Constructor
+## Le constructeur `ol.source.TileWMS`
 
-The `ol.source.TileWMS` constructor has a single argument which is defined by: http://openlayers.org/en/master/apidoc/ol.source.TileWMS.html.
-The url is the online resource of the WMS service, and params is an object literal with the parameter names and their values. Since the default WMS version is 1.3.0 now in OpenLayers, you might need to provide a lower version in the params if your WMS does not support WMS 1.3.0.
+Le constructeur `ol.source.TileWMS` est un argument unique qui est définit par: http://openlayers.org/en/master/apidoc/ol.source.TileWMS.html.
+L'url est la `online resource` du service WMS, et `params` est un objet litéral avec les noms des paramètres et leurs valeurs. Depuis que la version par défaut du WMS est la version 1.3.0 dans OpenLayers, vous pourriez avoir besoin de renseigner une version inférieure dans les `params` si votre WMS ne supporte par le WMS 1.3.0.
 
 ```js
   layers: [
@@ -84,11 +83,11 @@ The url is the online resource of the WMS service, and params is an object liter
   ]
 ```
 
-### Tasks
+### Tâches
 
-1. This same WMS offers a [Natural Earth](http://www.naturalearthdata.com/) layer named `'ne:NE1_HR_LC_SR_W_DR'`. Change the value of the `LAYERS` parameter from `'nasa:bluemarble'` to `'ne:NE1_HR_LC_SR_W_DR'`.
+1. Ce même WMS offre une couche [Natural Earth](http://www.naturalearthdata.com/) nommée `'ne:NE1_HR_LC_SR_W_DR'`. Changez la valeur du paramètre `LAYERS` de `'nasa:bluemarble'` à `'ne:NE1_HR_LC_SR_W_DR'`.
 
-  Your revised ol.layer.Tile Constructor should look like:
+  Votre version mise à jour du constructeur `ol.layer.Tile` devrait ressembler à ci-dessous:
 
   ```js
     new ol.layer.Tile({
@@ -100,9 +99,8 @@ The url is the online resource of the WMS service, and params is an object liter
     })
   ```
 
-1. Change your layer and source to have a single image instead of tiles. Look at the following API doc pages for hints: http://openlayers.org/en/master/apidoc/ol.layer.Image.html and http://openlayers.org/en/master/apidoc/ol.source.ImageWMS.html. Use the Network tab of your browser's developer tools to make sure a single image is requested and not 256x256 pixel tiles.
+1. Changez votre couche et votre source pour avoir une image uniqueplutôt que des tuiles. Regardez aux pages de la documentation de l'API pour avoir des indices: http://openlayers.org/en/master/apidoc/ol.layer.Image.html et http://openlayers.org/en/master/apidoc/ol.source.ImageWMS.html. Utilisez l'onglet `Réseau` des outils de développement de votre navigateur pour vous assurer qu'une seule image est demandée et pas seulement des tuiles de 256x256 pixels.
 
-  ![A WMS as an image source](wms1.png)
+  ![Un WMS comme source image](wms1.png)
 
-Having worked with dynamically rendered data from a Web Map Service, let's move
-on to learn about [cached tile services](cached.md).
+Après avoir travaillé avec une donnée rendu dynamiquement depuis un Web Map Service, passons maintenant à l'utilisation des [services de tuiles mises en cache](cached.md).

@@ -1,6 +1,6 @@
-# Styling Vector Layers
+# Styler les couches vecteur
 
-1.  We'll start with a working example that displays building footprints in a vector layer.  Open your text editor and save the following as `map.html` in the root of your workshop directory:
+1.  Nous allons commencer avec un exemple fonctionnel qui affiche l'empreinte des bâtiments dans une couche vecteur.  Ouvrez votre éditeur de texte et sauvez ce qui suit dans `map.html` à la racine de votre répertoire `workshop`:
 
   ```html
   <!doctype html>
@@ -49,9 +49,9 @@
   </html>
   ```
 
-1. Open this `map.html` file in your browser to see buildings with a red outline:  {{ book.workshopUrl }}/map.html
+2. Ouvrez le fichier `map.html` dans votre navigateur pour voir les bâtiments avec un contour rouge:  {{ book.workshopUrl }}/map.html
 
-1. With a basic understanding of [styling in OpenLayers](style-intro.md), we can create a style function that displays buildings in different colors based on the size of their footprint. In your map initialization code, add the following two styles arrays and replace the `style` option for the `'Buildings'` layer with the style function below:
+3. Avec une compréhension basique du [stylage dans OpenLayers](style-intro.md), nous pouvons créer une fonction de style qui affiche les bâtiments dans différentes couleurs en fonction de la taille de leur empreinte au sol. Dans votre code d'initialisation de la carte, ajoutez les deux tableaux de style suivants et remplacez l'option `style` pour la couche `'Buildings'` avec la fonction de style ci-dessous:
 
   ```js
     var defaultStyles = [
@@ -72,15 +72,15 @@
         return smallStyles;
       } else {
         return defaultStyles;
-      }      
+      }
     }
   ```
 
-1. Save your changes and open `map.html` in your browser: {{ book.workshopUrl }}/map.html
+4. Sauvez vos changements et ouvrez `map.html` dans votre navigateur: {{ book.workshopUrl }}/map.html
 
-    ![Buildings colored by footprint area](style1.png)
+    ![Bâtiment colorés par surface de l'empreinte au sol](style1.png)
 
-1. Now as a final step, let's add a label to the buildings. For simplicity we're only using a label and a black outline as the style.
+5. Maintenant comme étape finale, ajoutons une étiquette aux bâtiments. Par simplicité, nous allons seulement utiliser une étiquette et un contour noir comme styles.
 
   ```js
     style: (function() {
@@ -108,6 +108,6 @@
     })()
   ```
 
-1. Save your changes and open `map.html` in your browser: {{ book.workshopUrl }}/map.html
+6. Sauvez vos changements et ouvrez `map.html` dans votre navigateur: {{ book.workshopUrl }}/map.html
 
-  ![Buildings labeled by the key field](style2.png)
+  ![Bâtiments avec étiquette issues de la clé `field`](style2.png)
