@@ -1,0 +1,1902 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-09T23:25:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/343539223",
+      "properties": {
+        "@id": "node/343539223",
+        "amenity": "parking_entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5841977,
+          48.8412723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/471352561",
+      "properties": {
+        "@id": "node/471352561",
+        "amenity": "library",
+        "operator": "ENPC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5880842,
+          48.8412326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/516077372",
+      "properties": {
+        "@id": "node/516077372",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5845359,
+          48.8418071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/613804447",
+      "properties": {
+        "@id": "node/613804447",
+        "amenity": "restaurant",
+        "name": "Crous"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.585932,
+          48.8425809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/813539238",
+      "properties": {
+        "@id": "node/813539238",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "5",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "post_office",
+        "atm": "yes",
+        "change_machine": "yes",
+        "name": "Champs Sur Marne Descartes",
+        "operator": "La Poste",
+        "phone": "3631",
+        "ref:FR:LaPoste": "14675A",
+        "source": "data.gouv.fr:LaPoste - 04/2012",
+        "stamping_machine": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5834267,
+          48.8443816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/813539246",
+      "properties": {
+        "@id": "node/813539246",
+        "amenity": "post_box",
+        "operator": "La Poste",
+        "ref": "A4W3P6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5839529,
+          48.8426193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/813539257",
+      "properties": {
+        "@id": "node/813539257",
+        "amenity": "atm",
+        "operator": "La Banque Postale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5834615,
+          48.8443077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/974149273",
+      "properties": {
+        "@id": "node/974149273",
+        "amenity": "pub",
+        "name": "Cafétéria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.591667,
+          48.8411117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1016099731",
+      "properties": {
+        "@id": "node/1016099731",
+        "amenity": "fuel",
+        "covered": "yes",
+        "fuel:1_25": "no",
+        "fuel:1_50": "no",
+        "fuel:GTL_diesel": "no",
+        "fuel:HGV_diesel": "no",
+        "fuel:biodiesel": "no",
+        "fuel:biogas": "no",
+        "fuel:cng": "no",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:e85": "no",
+        "fuel:electricity": "no",
+        "fuel:lpg": "no",
+        "fuel:octane_100": "no",
+        "fuel:octane_91": "no",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "no",
+        "name": "Esso Express",
+        "operator": "Esso"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5775291,
+          48.8429824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1016125995",
+      "properties": {
+        "@id": "node/1016125995",
+        "amenity": "bicycle_parking",
+        "capacity": "12",
+        "covered": "no",
+        "supervised": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5787754,
+          48.84364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1274828361",
+      "properties": {
+        "@id": "node/1274828361",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5791287,
+          48.840099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1274828369",
+      "properties": {
+        "@id": "node/1274828369",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5784614,
+          48.8383603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1274828388",
+      "properties": {
+        "@id": "node/1274828388",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5789353,
+          48.839625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1703352724",
+      "properties": {
+        "@id": "node/1703352724",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "33",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Kushi-Yaki",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5846394,
+          48.8408245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1703352750",
+      "properties": {
+        "@id": "node/1703352750",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "19",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "cafe",
+        "cuisine": "french",
+        "name": "Le Descartes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5842173,
+          48.8420269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1703352760",
+      "properties": {
+        "@id": "node/1703352760",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "9",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "China Town"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.583652,
+          48.84392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1780630297",
+      "properties": {
+        "@id": "node/1780630297",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "11",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "BNP Paribas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5837584,
+          48.8437924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2039003175",
+      "properties": {
+        "@id": "node/2039003175",
+        "amenity": "library",
+        "operator": "ENSG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5874552,
+          48.8409389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2071155184",
+      "properties": {
+        "@id": "node/2071155184",
+        "amenity": "cafe",
+        "name": "FDK",
+        "wifi": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586257,
+          48.8390627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424161",
+      "properties": {
+        "@id": "node/2290424161",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "29",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "LCL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5845255,
+          48.8411643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424165",
+      "properties": {
+        "@id": "node/2290424165",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "31",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "Société Générale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5845888,
+          48.8409765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424169",
+      "properties": {
+        "@id": "node/2290424169",
+        "amenity": "bench",
+        "backrest": "yes",
+        "colour": "blue",
+        "material": "metal",
+        "seats": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5864766,
+          48.840274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424186",
+      "properties": {
+        "@id": "node/2290424186",
+        "amenity": "bench",
+        "backrest": "no",
+        "material": "concrete"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5844922,
+          48.8409634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424190",
+      "properties": {
+        "@id": "node/2290424190",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5844265,
+          48.8411761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424195",
+      "properties": {
+        "@id": "node/2290424195",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "27",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "fast_food",
+        "cuisine": "italian;sandwich;pizza",
+        "drive_through": "no",
+        "name": "O'Tomatica",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5844656,
+          48.8413422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424198",
+      "properties": {
+        "@id": "node/2290424198",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "25",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Good Tasty"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5844052,
+          48.8415214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424202",
+      "properties": {
+        "@id": "node/2290424202",
+        "amenity": "driving_school",
+        "name": "CER René Descartes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5842807,
+          48.8419012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424241",
+      "properties": {
+        "@id": "node/2290424241",
+        "amenity": "taxi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5815047,
+          48.8426535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424268",
+      "properties": {
+        "@id": "node/2290424268",
+        "amenity": "bicycle_parking",
+        "capacity": "12",
+        "covered": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5820975,
+          48.8428117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2290424276",
+      "properties": {
+        "@id": "node/2290424276",
+        "amenity": "car_rental",
+        "operator": "monautopartage",
+        "website": "monautopartage.fr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5823526,
+          48.8428878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2292340755",
+      "properties": {
+        "@id": "node/2292340755",
+        "amenity": "fast_food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5780341,
+          48.8425542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2292340763",
+      "properties": {
+        "@id": "node/2292340763",
+        "amenity": "atm",
+        "operator": "La Banque Postale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5778938,
+          48.8430807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2292340765",
+      "properties": {
+        "@id": "node/2292340765",
+        "amenity": "post_box",
+        "operator": "La Poste"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5778894,
+          48.8431136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2292340766",
+      "properties": {
+        "@id": "node/2292340766",
+        "addr:postcode": "93160",
+        "amenity": "post_office",
+        "atm": "yes",
+        "name": "NOISY LE GRAND CHAMPY",
+        "operator": "La Poste",
+        "phone": "3631",
+        "ref:FR:LaPoste": "17283A",
+        "source": "data.gouv.fr:LaPoste - 01/2013",
+        "stamping_machine": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.577885,
+          48.8431466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2292340774",
+      "properties": {
+        "@id": "node/2292340774",
+        "amenity": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5776561,
+          48.8432608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302466",
+      "properties": {
+        "@id": "node/2294302466",
+        "amenity": "restaurant",
+        "name": "Chez Bruno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5851245,
+          48.842651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302469",
+      "properties": {
+        "@id": "node/2294302469",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5856982,
+          48.840876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302474",
+      "properties": {
+        "@id": "node/2294302474",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5860341,
+          48.8420401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302485",
+      "properties": {
+        "@id": "node/2294302485",
+        "amenity": "recycling",
+        "recycling:glass": "yes",
+        "recycling_type": "container"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.584825,
+          48.8428096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302494",
+      "properties": {
+        "@id": "node/2294302494",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "name": "Pharmacie du Champy",
+        "ref:FR:FINESS": "930011770",
+        "source": "Celtipharm - 10/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5776671,
+          48.8435254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302497",
+      "properties": {
+        "@id": "node/2294302497",
+        "amenity": "fast_food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5779414,
+          48.8435459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302499",
+      "properties": {
+        "@id": "node/2294302499",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Jawi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5781242,
+          48.8435595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302501",
+      "properties": {
+        "@id": "node/2294302501",
+        "amenity": "fast_food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5783128,
+          48.8435736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302506",
+      "properties": {
+        "@id": "node/2294302506",
+        "amenity": "restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5786972,
+          48.8436024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2294302517",
+      "properties": {
+        "@id": "node/2294302517",
+        "amenity": "telephone",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.583409,
+          48.8438402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2340631962",
+      "properties": {
+        "@id": "node/2340631962",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878264,
+          48.8416054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2340631968",
+      "properties": {
+        "@id": "node/2340631968",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878102,
+          48.8417925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017747",
+      "properties": {
+        "@id": "node/2342017747",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873285,
+          48.8415743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017748",
+      "properties": {
+        "@id": "node/2342017748",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587367,
+          48.8415752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017749",
+      "properties": {
+        "@id": "node/2342017749",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873991,
+          48.841576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017750",
+      "properties": {
+        "@id": "node/2342017750",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5874324,
+          48.8415768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017751",
+      "properties": {
+        "@id": "node/2342017751",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5877878,
+          48.8416035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017752",
+      "properties": {
+        "@id": "node/2342017752",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878584,
+          48.8416069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017754",
+      "properties": {
+        "@id": "node/2342017754",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873249,
+          48.8416358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017755",
+      "properties": {
+        "@id": "node/2342017755",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873635,
+          48.8416367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017756",
+      "properties": {
+        "@id": "node/2342017756",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873955,
+          48.8416375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017757",
+      "properties": {
+        "@id": "node/2342017757",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5874288,
+          48.8416383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017758",
+      "properties": {
+        "@id": "node/2342017758",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5877865,
+          48.8416568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017759",
+      "properties": {
+        "@id": "node/2342017759",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878205,
+          48.8416586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017760",
+      "properties": {
+        "@id": "node/2342017760",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878532,
+          48.8416603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017762",
+      "properties": {
+        "@id": "node/2342017762",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587317,
+          48.8417106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017763",
+      "properties": {
+        "@id": "node/2342017763",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873556,
+          48.8417115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017764",
+      "properties": {
+        "@id": "node/2342017764",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873877,
+          48.8417123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017765",
+      "properties": {
+        "@id": "node/2342017765",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5874209,
+          48.8417132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017766",
+      "properties": {
+        "@id": "node/2342017766",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5877774,
+          48.8417334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017767",
+      "properties": {
+        "@id": "node/2342017767",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878116,
+          48.8417351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017768",
+      "properties": {
+        "@id": "node/2342017768",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878467,
+          48.8417368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017769",
+      "properties": {
+        "@id": "node/2342017769",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873092,
+          48.8417725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017770",
+      "properties": {
+        "@id": "node/2342017770",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873478,
+          48.8417735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017771",
+      "properties": {
+        "@id": "node/2342017771",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5873799,
+          48.8417743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017772",
+      "properties": {
+        "@id": "node/2342017772",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5874131,
+          48.8417751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017773",
+      "properties": {
+        "@id": "node/2342017773",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5877709,
+          48.841791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2342017774",
+      "properties": {
+        "@id": "node/2342017774",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5878388,
+          48.8417936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2675913942",
+      "properties": {
+        "@id": "node/2675913942",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5923037,
+          48.8364067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2675913945",
+      "properties": {
+        "@id": "node/2675913945",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5923203,
+          48.8364645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2675913949",
+      "properties": {
+        "@id": "node/2675913949",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5923441,
+          48.8365161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2694702063",
+      "properties": {
+        "@id": "node/2694702063",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.579271,
+          48.837389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2694702066",
+      "properties": {
+        "@id": "node/2694702066",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5793377,
+          48.8373983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2694702142",
+      "properties": {
+        "@id": "node/2694702142",
+        "amenity": "parking_space",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5895254,
+          48.8411075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2705344356",
+      "properties": {
+        "@id": "node/2705344356",
+        "amenity": "cafe",
+        "cuisine": "Sandwich_&_salades",
+        "internet_access": "no",
+        "name": "Cafeteria Crous",
+        "opening_hours": "10h-16h",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5928948,
+          48.8381709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2792744296",
+      "properties": {
+        "@id": "node/2792744296",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "7",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "alt_name": "Pharmacie MURCIANO",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "name": "Pharmacie Descartes",
+        "opening_hours": "Mo-Fr 08:00-20:15, Sa 09:00-20:00",
+        "ref:FR:FINESS": "770004596",
+        "source": "Celtipharm - 10/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5834809,
+          48.8442508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2793214036",
+      "properties": {
+        "@id": "node/2793214036",
+        "addr:city": "Champs-sur-Marne",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizza Uno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5835201,
+          48.844141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2794148629",
+      "properties": {
+        "@id": "node/2794148629",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "25 bis",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "amenity": "bank",
+        "name": "Assistra - Agence d'intérim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5844359,
+          48.8414304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2883464158",
+      "properties": {
+        "@id": "node/2883464158",
+        "addr:city": "Champs-sur-Marne",
+        "addr:housenumber": "17",
+        "addr:postcode": "77420",
+        "addr:street": "Avenue André-Marie Ampère",
+        "alt_name": "Pharmacie Copernic",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "name": "Pharmacie Copernic",
+        "ref:FR:FINESS": "770003358",
+        "source": "Celtipharm - 10/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5841956,
+          48.8422565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2883464160",
+      "properties": {
+        "@id": "node/2883464160",
+        "amenity": "vending_machine",
+        "payment:coins": "yes",
+        "vending": "condoms"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5841871,
+          48.8421862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2971789422",
+      "properties": {
+        "@id": "node/2971789422",
+        "amenity": "drinking_water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5783584,
+          48.8405063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271969",
+      "properties": {
+        "@id": "node/4075271969",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587766,
+          48.8397924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271970",
+      "properties": {
+        "@id": "node/4075271970",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5850898,
+          48.8404904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271971",
+      "properties": {
+        "@id": "node/4075271971",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5861433,
+          48.8405403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271972",
+      "properties": {
+        "@id": "node/4075271972",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5935032,
+          48.8407971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271973",
+      "properties": {
+        "@id": "node/4075271973",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5843945,
+          48.8410138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271974",
+      "properties": {
+        "@id": "node/4075271974",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5843603,
+          48.8413214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271975",
+      "properties": {
+        "@id": "node/4075271975",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5927992,
+          48.8416339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271976",
+      "properties": {
+        "@id": "node/4075271976",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5841705,
+          48.8417009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271977",
+      "properties": {
+        "@id": "node/4075271977",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5925511,
+          48.8417618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271978",
+      "properties": {
+        "@id": "node/4075271978",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5839519,
+          48.8424847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271979",
+      "properties": {
+        "@id": "node/4075271979",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5899916,
+          48.8425549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271980",
+      "properties": {
+        "@id": "node/4075271980",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5843911,
+          48.8426732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075271981",
+      "properties": {
+        "@id": "node/4075271981",
+        "amenity": "waste_basket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.58477,
+          48.8426948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075276995",
+      "properties": {
+        "@id": "node/4075276995",
+        "amenity": "bicycle_parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.589993,
+          48.8425919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075284986",
+      "properties": {
+        "@id": "node/4075284986",
+        "amenity": "charging_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5893394,
+          48.8405983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075286268",
+      "properties": {
+        "@id": "node/4075286268",
+        "amenity": "fast_food",
+        "fast_food": "cafeteria",
+        "name": "Coopcampus - Marne La Vallée",
+        "phone": "+33811690299",
+        "website": "http://www.solidariteetudiante.fr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5910859,
+          48.8391091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075310482",
+      "properties": {
+        "@id": "node/4075310482",
+        "amenity": "community_centre",
+        "community_centre:for": "student",
+        "name": "Radio Recc",
+        "office": "association",
+        "website": "http://www.radio-recc.fr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5902705,
+          48.839332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075330072",
+      "properties": {
+        "@id": "node/4075330072",
+        "amenity": "pharmacy",
+        "name": "Pharmaspecific"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5863649,
+          48.8375584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075337022",
+      "properties": {
+        "@id": "node/4075337022",
+        "amenity": "bicycle_parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5899812,
+          48.8425814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075338994",
+      "properties": {
+        "@id": "node/4075338994",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5864025,
+          48.8401268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075338995",
+      "properties": {
+        "@id": "node/4075338995",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5864816,
+          48.8401868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075338996",
+      "properties": {
+        "@id": "node/4075338996",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5864784,
+          48.8402431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075338997",
+      "properties": {
+        "@id": "node/4075338997",
+        "amenity": "bench"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5864723,
+          48.8403501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075353337",
+      "properties": {
+        "@id": "node/4075353337",
+        "amenity": "place_of_worship",
+        "denomination": "roman_catholic",
+        "description": "Aumonerie Catholique du Campus Descartes",
+        "name": "Sous le Figuier",
+        "religion": "christian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5854407,
+          48.840681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075374828",
+      "properties": {
+        "@id": "node/4075374828",
+        "amenity": "car_sharing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5858104,
+          48.8387618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075374829",
+      "properties": {
+        "@id": "node/4075374829",
+        "amenity": "car_sharing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5893161,
+          48.8405969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4075441327",
+      "properties": {
+        "@id": "node/4075441327",
+        "amenity": "charging_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5858332,
+          48.8387618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4126715628",
+      "properties": {
+        "@id": "node/4126715628",
+        "amenity": "restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5872045,
+          48.8422787
+        ]
+      }
+    }
+  ]
+}

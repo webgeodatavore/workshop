@@ -2,7 +2,7 @@
 
 Comme démontré dans la [section précédente](./map.md), une carte est générée en combinant balises, déclarations de style et code d'initialisation. Nous allons voir chacune de ces parties plus en détail.
 
-## Map Markup
+## Balise HTML pour la carte
 
 La balise pour la carte dans [l'exemple précédent](./map.md) génère un élément du DOM unique:
 

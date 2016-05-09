@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <style>
+      #map {
+        height: 256px;
+        width: 512px;
+      }
+    </style>
+    <script src="/loader.js" type="text/javascript"></script>
+    <title>OpenLayers 3 example</title>
+  </head>
+  <body>
+    <h1>My Map</h1>
+    <div id="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          new ol.layer.Vector({
+            title: 'Amenités OpenStreetMap',
+            source: new ol.source.Vector({
+              url: '/data/layers/amenities-around-ensg.geojson',
+              format: new ol.format.GeoJSON()
+            }),
+            style: new ol.style.Style({
+              image: new ol.style.Circle({
+                radius: 3,
+                fill: new ol.style.Fill({color: 'orange'})
+              })
+            })
+          })
+        ],
+        target: 'map',
+        view: new ol.View({
+          center: ol.proj.fromLonLat([2.58421, 48.84200]),
+          zoom: 15
+        })
+      });
+    </script>
+  </body>
+</html>
