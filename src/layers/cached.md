@@ -135,4 +135,8 @@ Par défaut, `ol.control.Attribution` ajoute un bouton `i` (information) qui peu
 
 Cela enlève le bouton `i`, et rend l'information d'attribution toujours visible.
 
+## Tâches bonus
+
+1. Modifier le code de l'exemple concernant les couches BRGM pour qu'elles s'afichent en utilisant le code EPSG 2154. Pour vous éviter de trop chercher, utilisez l'extent `[-378305, 6034305, 1320649, 7235612]` pour ce code EPSG. Si vous voulez explorer plus longuement, cette valeur est déduite de http://epsg.io/?format=json&q=2154 même si ce n'est pas l'objet du module.
+
 Après avoir maîtrisé les couches avec les jeux de tuiles mis en cache publics, passons au travail avec [les couches raster propriétaires](proprietary.md).
