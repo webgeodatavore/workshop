@@ -1,6 +1,6 @@
 # Workshop OpenLayers
 
-Bienvenue au **Workshop OpenLayers 3**. Ce workshop est conçu pour vous donner une vue d'ensemble d'OpenLayers en tant que solution d cartographie en ligne.
+Bienvenue au **Workshop OpenLayers 3**. Ce workshop est conçu pour vous donner une vue d'ensemble d'OpenLayers en tant que solution de cartographie en ligne.
 
 ## Configuration
 
@@ -10,7 +10,7 @@ Après extraction du fichier zip, allez dans le répertoire `openlayers-workshop
 
     npm install
 
-Maintenant, vous êtes prêt à démarrer le serveur pour le workshop.  Il sert la documentation du workshop en plus de fournir un chargeur pour le debug pour la bibliothèque OpenLayers.
+Maintenant, vous êtes prêts à démarrer le serveur pour le workshop.  Il sert la documentation du workshop en plus de fournir un chargeur pour le debug pour la bibliothèque OpenLayers.
 
     npm start
 
@@ -18,7 +18,7 @@ Cela va démarrer un serveur de développement où vous pourrez lire la document
 
 ## Vue d'ensemble
 
-Ce workshop est présenté comme un jeu de modules.  Dans chacun de ces modules, vous devrez effectuer un ensemble de tâche conçues pour assimiler un but spécifique à ce module.  Chaque module enchaîne les leçons vues dans les modules précédents et est conçu pour vous faire monter en compétence votre connaissance par étapes.
+Ce workshop est présenté comme un jeu de modules.  Dans chacun de ces modules, vous devrez effectuer un ensemble de tâche conçues pour assimiler un but spécifique à ce module.  Chaque module enchaîne les leçons vues dans les modules précédents et est conçu pour vous faire monter en compétence par étapes.
 
 Les modules suivants seront couverts par ce workshop:
 

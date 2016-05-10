@@ -49,12 +49,12 @@ Jetons un oeil à un exemple pleinement fonctionnel d'une carte OpenLayers 3.
 
 ### Tâches
 
-1.  Assurez-vous d'avoir bien complété les [instructions de configuration](../) pour installer les dépendances et avoir le serveur de debug qui puisse fonctionner.
+1.  Assurez-vous d'avoir bien complété les [instructions de configuration](../) pour installer les dépendances et avoir le serveur de debug qui fonctionne.
 
-1.  Copiez le texte ci-dessus dans un nouveau fichier appelé `map.html`, et sauvez le à la racine du répertoire du workshop.
+1.  Copiez le texte ci-dessus dans un nouveau fichier appelé `map.html`, et sauvez-le à la racine du répertoire du workshop.
 
 1.  Ouvrir la carte dans votre navigateur web: {{ book.workshopUrl }}/map.html
 
 ![Un carte fonctionnelle affichant une image du monde](map1.png)
 
-Après avoir créé avec succès votre première carte, nous allons continuer en regardant plus précisément aux [différentes parties](./dissect.md).
+Après avoir créé avec succès votre première carte, nous allons continuer en regardant plus précisément chacune des [différentes parties](./dissect.md).

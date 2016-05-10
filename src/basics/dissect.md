@@ -10,13 +10,13 @@ La balise pour la carte dans [l'exemple précédent](./map.md) génère un élé
   <div id="map"></div>
 ```
 
-Cet élément `<div>` servira comme container de votre fenêtre d'affichage de carte. Ici, nous utilisons un élément `<div>` element, mais le container pour la fenêtre d'affichage de carte peut être n'importe quel élement de type "block".
+Cet élément `<div>` servira comme container de votre fenêtre d'affichage de carte. Ici, nous utilisons un élément `<div>`, mais le container pour la fenêtre d'affichage de carte peut être n'importe quel élement de type "block".
 
 Dans ce cas, nous donnons au container un attribut `id` afin que nous puissions le référencer comme cible `target` de notre carte.
 
 ## Styles de carte
 
-OpenLayers fournit une feuille de styles par défaut qui sépcifie comment les principaux éléments liés à la carte devrait être stylés. Nous incluons explicitement cette feuille de style dans la page `map.html` (`<link rel="stylesheet" href="/ol.css" type="text/css">`).
+OpenLayers fournit une feuille de styles par défaut qui spécifie comment les principaux éléments liés à la carte devraient être stylés. Nous incluons explicitement cette feuille de style dans la page `map.html` (`<link rel="stylesheet" href="/ol.css" type="text/css">`).
 
 OpenLayers ne fait aucune supposition concernant la taille de la carte. Pour cette raison, en suivant la feuille de style par défaut, nous avons besoin d'inclure au moins une déclaration de style personnalisée pour donner de la place à la carte sur la page.
 
@@ -30,13 +30,13 @@ OpenLayers ne fait aucune supposition concernant la taille de la carte. Pour cet
   </style>
 ```
 
-Dans ce cas, nous utilisons la valeur de l'`ide` du container de la carte comme sélecteur et nous spécifions la largeur (`512px`) et la hauteur (`256px`) pour le container de la carte.
+Dans ce cas, nous utilisons la valeur de l'`id` du container de la carte comme sélecteur et nous spécifions la largeur (`512px`) et la hauteur (`256px`) pour le container de la carte.
 
-Les déclarations de style sont directement incluses dans le bloc `<head>` de notre document. Dans la plupart des cas, vos déclarations de style liées à la carte  seront inclues dans un thème de site web plus important, référencé dans des feuilles de style externes.
+Les déclarations de style sont directement incluses dans le bloc `<head>` de notre document. Dans la plupart des cas, vos déclarations de style liées à la carte seront incluses dans un thème de site web plus important, référencé dans des feuilles de style externes.
 
 ## Initialisation de la carte
 
-La prochaine étape dans la génération de votre carte est d'inclure un peu de code pour l'initialisation. Dans notre cas, nous avons inclus un élément `<script>` en base du corps de notre `<body>` pour faire le travail:
+La prochaine étape dans la génération de votre carte est d'inclure un peu de code pour l'initialisation. Dans notre cas, nous avons inclus un élément `<script>` en bas du corps de notre `<body>` pour faire le travail:
 
 ```html
   <script>
@@ -86,7 +86,7 @@ La configuration de couches créé une couche qui doit être affichée dans notr
   ],
 ```
 
-Ne vous inquiétez pas de la syntaxe ici si cette partie est nouvelle pour vous. La création de couches sera couverte dans un autre module. La partie importante à comprendre est la vue de notre carte est une collection de couches. Pour pouvoir voir une carte, nous avons besoin au minimum au moins une couche.
+Ne vous inquiétez pas de la syntaxe ici si cette partie est nouvelle pour vous. La création de couches sera couverte dans un autre module. La partie importante à comprendre est que la vue de notre carte est une collection de couches. Pour pouvoir voir une carte, nous avons besoin au minimum d'une couche.
 
 L'étape finale est de définir la vue. Nous spécifions une projection, un centre et un niveau de zoom. Nous spécifions aussi une `maxResolution` pour nous assurer que nous ne demandons pas des `bounding boxes` que GeoWebCache ne peut pas gérer.
 
@@ -99,4 +99,4 @@ L'étape finale est de définir la vue. Nous spécifions une projection, un cent
   })
 ```
 
-Nous avons disséqué avec succès votre première carte! Maintenant, [apprenons en plus](./resources.md) sur le développement avec OpenLayers.
+Vous avez disséqué avec succès votre première carte! Maintenant, [apprenons en plus](./resources.md) sur le développement avec OpenLayers.
