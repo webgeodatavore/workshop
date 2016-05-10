@@ -97,9 +97,11 @@ La couche se voit donner le titre (`title`) `'Earthquakes'` et quelques options 
 
 ### Tâches bonus
 
-1.  les cercles blancs sur la carte représentent des objets `ol.Feature` sur votre couche `ol.layer.Vector`. Chacun de ces objets a des données d'attributs les propriétés `title` et `summary`. Assignez un événement de type `'singleclick'` sur votre carte qui appelle `forEachFeatureAtPixel` sur la carte et affiche les informations de tremblements de terre en dessous de la fenêtre d'affichage de carte.
+1.  Les cercles blancs sur la carte représentent des objets `ol.Feature` sur votre couche `ol.layer.Vector`. Chacun de ces objets a des données d'attributs les propriétés `title` et `summary`. Assignez un événement de type `'singleclick'` sur votre carte qui appelle `forEachFeatureAtPixel` sur la carte et affiche les informations de tremblements de terre en dessous de la fenêtre d'affichage de carte.
 
-1.  La donnée pour la couche vecteur vient du flux d'information sur les tremblements de terre publié par l'USGS (http://earthquake.usgs.gov/earthquakes/catalogs/).  Voyez si vous pouvez trouver des données additionnelles avec des informations spatiales dans un format supporté par OpenLayers 3.  Si vous sauvegardez un autre document représentant des données spatiales dans votre répertoire `data`, vous devriez être capable de le voir dans une couche vecteur sur votre carte.
+2.  La donnée pour la couche vecteur vient du flux d'information sur les tremblements de terre publié par l'USGS (http://earthquake.usgs.gov/earthquakes/catalogs/).  Voyez si vous pouvez trouver des données additionnelles avec des informations spatiales dans un format supporté par OpenLayers 3.  Si vous sauvegardez un autre document représentant des données spatiales dans votre répertoire `data`, vous devriez être capable de le voir dans une couche vecteur sur votre carte.
+
+3.  Allez sur l'exemple officiel http://openlayers.org/en/v3.15.1/examples/popup.html pour voir comment fonctionne `ol.Overlay`. Ce dernier permet de positionner un élément du DOM sur la carte en fonction des coordonnées. Vous pouvez ainsi afficher une popup avec la valeur antérieurement affichée en dehors de la carte de la première tâche bonus.
 
 ### Solutions
 
