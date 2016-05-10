@@ -18,7 +18,7 @@ Cela va démarrer un serveur de développement où vous pourrez lire la document
 
 ## Vue d'ensemble
 
-Ce workshop est présenté comme un jeu de modules.  Dans chacun de ces modules, vous devrez effectuez un ensemble de tâche conçues pour assimiler un but spécifique à ce module.  Chaque module enchaîne les leçons vues dans les modules précédents et est conçu pour vous faire monter en compétence votre connaissance par étapes.
+Ce workshop est présenté comme un jeu de modules.  Dans chacun de ces modules, vous devrez effectuer un ensemble de tâche conçues pour assimiler un but spécifique à ce module.  Chaque module enchaîne les leçons vues dans les modules précédents et est conçu pour vous faire monter en compétence votre connaissance par étapes.
 
 Les modules suivants seront couverts par ce workshop:
 
