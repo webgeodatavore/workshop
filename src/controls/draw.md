@@ -72,17 +72,17 @@ De nouveaux objets géographiques peuvent être dessinés en utilisant une `ol.i
     </html>
   ```
 
-2.  Sauvez vos changements dans `map.html` et ouvrez la page dans votre navigateur:  {{ book.workshopUrl }}/map.html. Pour voir, le dessin de géométries de type point en action, clicquez sur la carte pour ajouter un nouvel objet géographique:
+2.  Sauvez vos changements dans `map.html` et ouvrez la page dans votre navigateur:  {{ book.workshopUrl }}/map.html. Pour voir, le dessin de géométries de type point en action, cliquez sur la carte pour ajouter un nouvel objet géographique:
 
   ![Utilisation d'une interaction de dessin pour ajouter un objet géographique à la source vecteur](draw1.png)
 
 ### Tâches bonus
 
-1.  Créez un "écouteur" d'événement qui récupère les coordonnées X et Y du nouvel objet géographique après qu'il ait été dessiné.
+1.  Créez un "listener" qui récupère les coordonnées X et Y du nouvel objet géographique après qu'il ait été dessiné.
 
 ### Solutions
 
-Voici une solution pour la première tâche bonus. Dedans, nous assignons un écouteur d'événement pour l'événement `drawend` de `ol.interaction.Draw`. Cette méthode enregistre les X et Y de l'objet géographique dans la console des outils de développement du navigateur:
+Voici une solution pour la première tâche bonus. Dedans, nous assignons un "listener" pour l'événement `drawend` de `ol.interaction.Draw`. Cette méthode enregistre les X et Y de l'objet géographique dans la console des outils de développement du navigateur:
 
 ```js
 draw.on('drawend', function(evt){

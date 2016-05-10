@@ -110,4 +110,4 @@
 
 6. Sauvez vos changements et ouvrez `map.html` dans votre navigateur: {{ book.workshopUrl }}/map.html
 
-  ![Bâtiments avec étiquette issues de la clé `field`](style2.png)
+  ![Bâtiments avec étiquette issue de la clé `field`](style2.png)
