@@ -4,7 +4,7 @@ Quand vous ajoutez une couche à votre carte, la source de la couche est respons
 
 Il y a  de nombreux types de services qui fournissent des données cartographiques raster. Cette section traite des fournisseurs qui se conforment à la spécification [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) de l'OGC (Open Geospatial Consortium, Inc.).
 
-## Créez une couche
+## Créer une couche
 
 Nous allons commencer avec un exemple complet de carte et modifier les couches pour pour avoir la compréhension de comment elles fonctionnent.
 
@@ -99,7 +99,7 @@ L'url est la `online resource` du service WMS, et `params` est un objet litéral
     })
   ```
 
-1. Changez votre couche et votre source pour avoir une image uniqueplutôt que des tuiles. Regardez aux pages de la documentation de l'API pour avoir des indices: http://openlayers.org/en/master/apidoc/ol.layer.Image.html et http://openlayers.org/en/master/apidoc/ol.source.ImageWMS.html. Utilisez l'onglet `Réseau` des outils de développement de votre navigateur pour vous assurer qu'une seule image est demandée et pas seulement des tuiles de 256x256 pixels.
+2. Changez votre couche et votre source pour avoir une image unique plutôt que des tuiles. Regardez aux pages de la documentation de l'API pour avoir des indices: http://openlayers.org/en/master/apidoc/ol.layer.Image.html et http://openlayers.org/en/master/apidoc/ol.source.ImageWMS.html. Utilisez l'onglet `Réseau` des outils de développement de votre navigateur pour vous assurer qu'une seule image est demandée et pas seulement des tuiles de 256x256 pixels.
 
   ![Un WMS comme source image](wms1.png)
 

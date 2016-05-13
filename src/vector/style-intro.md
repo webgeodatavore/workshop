@@ -10,7 +10,7 @@ Quand vous stylez des éléments HTML, vous devez utilisez des CSS ressemblant �
   }
 ```
 
-Le texte `.someClass` est un sélecteur (dans ce cas, il sélectionne tous les éléments qui incluent le nom de la classe `'someClass'`) et le bloc qui suit est un groupe de propriétés nommées et valeurs, connues aussi comme des déclarations de style.
+Le texte `.someClass` est un sélecteur (dans ce cas, il sélectionne tous les éléments qui incluent le nom de la classe `'someClass'`) et le bloc qui suit est un groupe de propriétés nommées avec des valeurs, connues aussi comme déclarations de style.
 
 ## Style de couche
 
@@ -43,7 +43,7 @@ Et voici un exemple de couche vecteur configurée avec une fonction de style qui
 
 ## Les symboliseurs
 
-L'équivalent d'un bloc de déclaration en CSS est un `symboliseur` en OpenLayers 3 (ce sont typiquement des instances de classes `ol.style`). Pour peindre des objets géographiques avec un fond bleu et une ligne de 1 pixel de large de couleur olive, vous devriez utilisez deux symboliseurs comme suivant:
+L'équivalent d'un bloc de déclaration en CSS est un `symboliseur` en OpenLayers 3 (ce sont typiquement des instances de classes `ol.style`). Pour peindre des objets géographiques avec un fond bleu et une ligne de 1 pixel de large de couleur olive, vous devrez utilisez deux symboliseurs comme suivant:
 
 ```js
   new ol.style.Style({
@@ -77,7 +77,7 @@ En fonction du type de géométrie, différents symboliseurs peuvent être appli
 
 Un objet `ol.style.Style` a 4 clés: `fill`, `image`, `stroke` et `text`. Il a aussi une propriété optionnelle `zIndex`. La fonction de style retournera un tableau d'objets `ol.style.Style`.
 
-Si vous voulez que tous les objets géographiques soit coloriés en rougne à l'exception de ceux qui ont une attribut `class` ayant pour valeur `"someClass"` (et que vous voulez que ces objets géographiques soit coloriés en bleu avec une ligne de 1 pixel de large de couleur olive), vous devrirez créer une fonction de style qui resssemble à celle qui suit (par ailleurs, il est important de créer les objets en dehors de la fonction de style afin qu'ils puissent être réutilisés, mais pour des raisons de simplicité les objets sont créés "inline" dans l'exemple ci-dessous):
+Si vous voulez que tous les objets géographiques soit coloriés en rouge à l'exception de ceux qui ont une attribut `class` ayant pour valeur `"someClass"` (et que vous voulez que ces objets géographiques soient coloriés en bleu avec une ligne de 1 pixel de large de couleur olive), vous devrez créer une fonction de style qui resssemble à celle qui suit (par ailleurs, il est important de créer les objets en dehors de la fonction de style afin qu'ils puissent être réutilisés, mais pour des raisons de simplicité les objets sont créés "inline" dans l'exemple ci-dessous):
 
 ```js
   var primaryStyles = [
@@ -109,9 +109,9 @@ Si vous voulez que tous les objets géographiques soit coloriés en rougne à l'
   });
 ```
 
-*Note* - Il est important de créer les tableaux de style en dehors de la fonction  de style réelle.  La fonction de style est appelée de nombreuses fois pendant les phases de rendu, et vous aurez une animation plus fluide si vos fonctions de style ne créent pas trop d'éléments inutiles en mémoire.
+*Note* - Il est important de créer les tableaux de style en dehors de la fonction de style réelle. La fonction de style est appelée de nombreuses fois pendant les phases de rendu, et vous aurez une animation plus fluide si vos fonctions de style ne créent pas trop d'éléments inutiles en mémoire.
 
-Un objet géographique a aussi un option de configurration de style qui peut prendre une fonction n'ayant que la résolution comme argument. Cela rend possible de styler les objets géographiques individuels (basés sur la résolution).
+Un objet géographique a aussi un option de configuration de style qui peut prendre une fonction n'ayant que la résolution comme argument. Cela permet de styler les objets géographiques de manière individuelle (basés sur la résolution).
 
 ## Pseudo-classes
 

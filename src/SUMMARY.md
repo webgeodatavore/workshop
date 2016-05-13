@@ -12,8 +12,8 @@
   * [Données vecteur](layers/vector.md)
   * [Source image vecteur](layers/imagevector.md)
 
-* [Les `Controls` et les `Interactions`](controls/README.md)
-  * [Le `Control` barre d'échelle `ScaleLine`](controls/scaleline.md)
+* [Les control et les interaction](controls/README.md)
+  * [Le control barre d'échelle `ScaleLine`](controls/scaleline.md)
   * [L'interaction de sélection `Select`](controls/select.md)
   * [L'interaction de dessin `Draw`](controls/draw.md)
   * [L'interaction de modification `Modify`](controls/modify.md)

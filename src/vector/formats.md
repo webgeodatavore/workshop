@@ -4,9 +4,9 @@ Le constructeur "de base" `ol.layer.Vector` fournit un type de couche plutôt fl
 
 ## `ol.format`
 
-Les classes `ol.format` dans OpenLayers 3 sont responsables du parsing des données venant du serveur et représentant les objets géographiques vecteur. Le format transforme un objet géographique brut en objets `ol.Feature`.
+Les classes `ol.format` dans OpenLayers 3 sont responsables du "parsing" des données venant du serveur et représentant les objets géographiques vecteur. Le format transforme un objet géographique brut en objet `ol.Feature`.
 
-Considérons les deux blocs de données ci-dessous. Les deux représentent le même objet `ol.Feature` (un point à Barcelone, Espagne). Le premier est sérialisé comme [GeoJSON](http://geojson.org>) (en utilisant le parser `ol.format.GeoJSON`). Le second est sérialisé comme KML (OGC Keyhole Markup Language) (en utilisant le parser `ol.format.KML`).
+Considérons les deux blocs de données ci-dessous. Les deux représentent le même objet `ol.Feature` (un point à Barcelone, Espagne). Le premier est sérialisé comme [GeoJSON](http://geojson.org>) (en utilisant le "parser" `ol.format.GeoJSON`). Le second est sérialisé comme KML (OGC Keyhole Markup Language) (en utilisant le "parser" `ol.format.KML`).
 
 ### Exemple GeoJSON
 

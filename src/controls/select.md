@@ -2,7 +2,7 @@
 
 Comme nous l'avons vu dans le module sur les couches, nous pouvons récupérer des objets géographiques comme des vecteurs et les dessinez par dessus une carte en fond dite "base". Un des avantages de servir des données vecteur est que les utilisateurs peuvent interagir avec la donnée. Dans cet exemple, nous créons une couche vecteur où les utilisateurs peuvent sélectionner et voir les informations des objets géographiques.
 
-L'exemple précédent faisait la démonstration de l'utilisation d'un `ol.control.Control` sur la carte.  Les `controls` ont une représentation visuelle sur la carte ou ajoute des éléments DOM au document.  Une `ol.interaction.Interaction` est responsable de gérer les interactions utilisateurs, mais typiquement sans représentation visuelle.  Cet exemple montre l'utilisation d'une `ol.interaction.Select` pour interagir avec les objets géographiques de couches vecteur.
+L'exemple précédent faisait la démonstration de l'utilisation d'un `ol.control.Control` sur la carte.  Les `controls` ont une représentation visuelle sur la carte ou ajoutent des éléments DOM au document.  Une `ol.interaction.Interaction` est responsable de gérer les interactions utilisateurs, mais typiquement sans représentation visuelle.  Cet exemple montre l'utilisation d'une `ol.interaction.Select` pour interagir avec les objets géographiques de couches vecteur.
 
 ## Créer un couche vecteur et une interaction de type `Select`
 

@@ -8,7 +8,7 @@ Dans cette section, nous allons repartir  de l'exemple développé dans la [sect
 
 Ajoutons un couche Bing.
 
-### Tasks
+### Tâches
 
 1. Dans votre fichier `map.html`, trouvez où la source OSM (OpenStreetMap) est configurée et changez-la en `ol.source.BingMaps`
 
