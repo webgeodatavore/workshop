@@ -14,7 +14,8 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -22,7 +23,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
       }
     </style>
     <title>OpenLayers 3 example</title>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>My Map</h1>

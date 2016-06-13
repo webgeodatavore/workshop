@@ -14,14 +14,15 @@ The previous example demonstrated the use of an `ol.control.Control` on the map.
   <!doctype html>
   <html lang="en">
     <head>
-      <link rel="stylesheet" href="/ol.css" type="text/css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="libs/ol.css" type="text/css">
       <style>
       #map {
         height: 256px;
         width: 512px;
       }
       </style>
-      <script src="/loader.js" type="text/javascript"></script>
+      <script src="libs/ol.js" type="text/javascript"></script>
       <title>OpenLayers 3 example</title>
     </head>
     <body>

@@ -10,7 +10,8 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -18,7 +19,7 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
       }
     </style>
     <title>OpenLayers 3 example</title>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>My Map</h1>

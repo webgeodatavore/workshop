@@ -32,7 +32,8 @@ Your revised `map.html` file should look something like this:
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -42,7 +43,7 @@ Your revised `map.html` file should look something like this:
         color: black;
       }
     </style>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
     <title>OpenLayers 3 example</title>
   </head>
   <body>
