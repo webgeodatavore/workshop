@@ -52,8 +52,8 @@ The next step in generating your map is to include some initialization code. In 
       ],
       view: new ol.View({
         projection: 'EPSG:4326',
-        center: [0, 0],
-        zoom: 0,
+        center: [-1.4042, 50.9028],
+        zoom: 3,
         maxResolution: 0.703125
       })
     });
@@ -93,8 +93,8 @@ The final step is defining the view. We specify a projection, a center and a zoo
 ```js
   view: new ol.View({
      projection: 'EPSG:4326',
-     center: [0, 0],
-     zoom: 0,
+     center: [-1.4042, 50.9028],
+     zoom: 3,
      maxResolution: 0.703125
   })
 ```

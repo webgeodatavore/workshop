@@ -8,7 +8,6 @@
 * [Layers and Sources](layers/README.md)
   * [WMS sources](layers/wms.md)
   * [Tiled sources](layers/cached.md)
-  * [Proprietary tile providers](layers/proprietary.md)
   * [Vector data](layers/vector.md)
   * [Image vector source](layers/imagevector.md)
 

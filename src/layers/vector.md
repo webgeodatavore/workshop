@@ -39,7 +39,7 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
         view: new ol.View({
           projection: 'EPSG:4326',
           center: [0, 0],
-          zoom: 0,
+          zoom: 1,
           maxResolution: 0.703125
         })
       });
@@ -71,6 +71,8 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
   ```
 
   ![Earthquake locations](vector1.png)
+
+1. Reuse the WMS projected code and like above add your own GeoJSON. In the data direcotry, you will find a file `amenities-atm.geojson`
 
 ### A Closer Look
 

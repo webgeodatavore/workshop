@@ -38,8 +38,8 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
         ],
         view: new ol.View({
           projection: 'EPSG:4326',
-          center: [0, 0],
-          zoom: 0,
+          center: [-1.4042, 50.9028],
+          zoom: 3,
           maxResolution: 0.703125
         })
       });

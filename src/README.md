@@ -19,14 +19,13 @@ With Python, you can run a local webserver by changing the root of the repositor
 
     python -m SimpleHTTPServer
 
+By default, the content is available in your browser via http://localhost:8000
+
 If you have Node installed, install `http-server` with the command `npm install http-server`. Then, change the rpository root and run:
 
     http-server
 
-
-These instructions assume that you are starting with an `openlayers-workshop.zip` archive from the latest [workshop release](https://github.com/openlayers/workshop/releases).  In addition, you'll need [Node](https://nodejs.org/) installed to run a development server for the OpenLayers library.
-
-This will start a development server where you can read the workshop documentation and work through the exercises: {{ book.workshopUrl }}.
+By default, the content is available in your browser via http://localhost:8080
 
 ## Overview
 
