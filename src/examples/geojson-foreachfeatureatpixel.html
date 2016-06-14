@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 100%;
+        width: 100%;
+      }
+      #info {
+        background-color: white;
+        padding: 10px;
+      }
+    </style>
+
+    <script src="libs/ol.js"></script>
+    <title>OpenLayers 3 example</title>
+  </head>
+  <body>
+    <div id="info"></div>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+
+      // Membres
+      var members = [{
+        id: 1, lieu: 'Lima', prenom: 'Jacques', lat: -12.0454, lon: -77.031
+      },{
+        lieu: 'Port-au-Prince', prenom: 'Claire', lat: 18.54, lon: -72.3399, id: 2
+      },{
+        id: 3, lieu: 'St John\'s', prenom: 'André', lat: 47.5612, lon: -52.715
+      },{
+        id: 4, lieu: 'Toulouse', prenom: 'John', lat: 43.5951, lon: 1.4355
+      },{
+        id: 5, lieu: 'Nantes', prenom: 'Marie', lat: 47.2223, lon: -1.5533
+      },{
+        id: 6, lieu: 'Saint-Mandé', prenom: 'Andrea', lat: 48.8557, lon: 2.4299
+      },{
+        id: 7, lieu: 'Aix-en-Provence', prenom: 'Anne', lat: 43.5171, lon: 5.4664
+      }];
+
+      // Transformation du tableau "à plat" en liste de Feature GeoJSON
+      var geojson_features = members.map(function(el) {
+        return {
+          'id': el.id,
+          'type': 'Feature',
+          'geometry': {
+              'type': 'Point',
+              'coordinates': [
+                  el.lon,
+                  el.lat
+              ]
+          },
+          'properties': {
+              'prenom': el.prenom,
+              'lieu': el.lieu
+          }
+        };
+      });
+
+      // Réutilisation de la liste de features dans une FeatureCollection
+      var geojson_object = {
+        'type': 'FeatureCollection',
+        features: geojson_features
+      };
+
+      // Conversion du GeoJSON en ol.Feature
+      var ol_features = (new ol.format.GeoJSON()).readFeatures(
+        geojson_object, {
+          dataProjection: 'EPSG:4326',
+          featureProjection: 'EPSG:3857'
+        }
+      );
+
+      // Source de type Vector qu'on alimente par un objet
+      // JavaScript (cela peut dans d'autres cas être une URL)
+      var vector_source = new ol.source.Vector({
+        features: ol_features
+      });
+
+      // Style adapté de la démo officielle
+      // http://openlayers.org/en/master/examples/icon.html
+      // en utilisant une icône de Leaflet ;)
+      var iconStyle = new ol.style.Style({
+        image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+          anchor: [0.5, 41],
+          anchorXUnits: 'fraction',
+          anchorYUnits: 'pixels',
+          src: 'icons/marker-icon.png'
+        }))
+      });
+
+      // Déclaration d'une couche vecteur
+      var vector_layer = new ol.layer.Vector({
+        source: vector_source,
+        style: iconStyle
+      });
+
+      // Déclaration d'une source raster
+      // indiquant la provenance de la donnée
+      // (indirectement URL généralement)
+      var mapquest_source = new ol.source.MapQuest({
+        layer: 'sat'
+      });
+
+      // Déclaration d'une couche raster qui permet de spécifier
+      // quel est le type de données retourné par la source
+      var raster_layer = new ol.layer.Tile({
+        source: mapquest_source
+      });
+
+      // Obtenir le centre de la donnée depuis l'étendue de la source de la couche vecteur
+      var center = ol.extent.getCenter(vector_layer.getSource().getExtent());
+
+      // Déclaration d'une vue
+      var view = new ol.View({
+        center: ol.proj.fromLonLat([2, 45]),
+        zoom: 2
+      });
+
+      // Déclaration d'une carte
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          raster_layer
+          ,vector_layer
+        ],
+        view: view
+      });
+
+      // Sélection d'un élement du DOM
+      var container = document.getElementById('info');
+
+      // Déclaration d'un OverLay permettant d'afficher
+      // ultérieurement une popup sur la carte
+      var overlay = new ol.Overlay({
+        element: container
+      });
+
+      // Ajout de l'OverLay à la carte
+      map.addOverlay(overlay);
+
+      // Modèle "inline" pour définir le contenu de la popup
+      var tmpl = function(first_name, place) {
+        return 'Pr&eacute;nom: ' + first_name + ' <br>Lieu: ' + place;
+      };
+
+      // Ajout de l'événement click sur l'objet map
+      map.on('click', function(evt) {
+        var coordinate = evt.coordinate;
+        var pixel = map.getEventPixel(evt.originalEvent);
+        var feature = map.forEachFeatureAtPixel(
+          pixel,
+          function(feature, layer) {
+            return feature;
+          }
+        );
+
+        // Si non vide
+        if (feature != undefined) {
+          var props = feature.getProperties();
+
+          var contributor = tmpl(props.prenom, props.lieu);
+
+          // On positionne l'OverLay avec les coordonnées
+          overlay.setPosition(coordinate);
+          // On change le contenu de l'élément DOM avec le résultat de la sélection
+          container.innerHTML = contributor;
+          // On change son style CSS en block
+          container.style.display = 'block';
+        } else {
+          // On change son style CSS en none pour cacher l'élément
+          container.style.display = 'none';
+        }
+      });
+
+    </script>
+  </body>
+</html>
