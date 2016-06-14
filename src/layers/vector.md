@@ -58,7 +58,7 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
     new ol.layer.Vector({
       title: 'Earthquakes',
       source: new ol.source.Vector({
-        url: '/data/layers/7day-M2.5.json',
+        url: '../data/layers/7day-M2.5.json',
         format: new ol.format.GeoJSON()
       }),
       style: new ol.style.Style({
@@ -72,17 +72,22 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
 
   ![Earthquake locations](vector1.png)
 
-1. Reuse the WMS projected code and like above add your own GeoJSON. In the data direcotry, you will find a file `amenities-atm.geojson`
+1. Reuse the WMS projected code and like above add your own GeoJSON. In the `data` directory, you will find a file named `amenities-atm.geojson`. The result should look like below. Points style may change according to your mileage.
+
+  ![ATM amenities](vector2.png)
+
+
+
 
 ### A Closer Look
 
 Let's examine that vector layer creation to get an idea of what is going on.
 
-```js
+```jsh2geo.json
 new ol.layer.Vector({
   title: 'Earthquakes',
   source: new ol.source.Vector({
-    url: '/data/layers/7day-M2.5.json',
+    url: '../data/layers/7day-M2.5.json',
     format: new ol.format.GeoJSON()
   }),
   style: new ol.style.Style({

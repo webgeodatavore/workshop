@@ -30,7 +30,7 @@
             new ol.layer.Vector({
               title: 'Buildings',
               source: new ol.source.Vector({
-                url: '/data/layers/buildings.kml',
+                url: '../data/layers/ordnance-survey-buildings.kml',
                 format: new ol.format.KML({
                   extractStyles: false
                 })
@@ -41,7 +41,7 @@
             })
           ],
           view: new ol.View({
-            center: ol.proj.fromLonLat([-122.79264450073244, 42.30975194250527]),
+            center: ol.proj.fromLonLat([-1.47126, 50.93812]),
             zoom: 16
           })
         });
@@ -100,7 +100,7 @@
           stroke: stroke,
           text: new ol.style.Text({
             font: '12px Calibri,sans-serif',
-            text: feature.get('key'),
+            text: feature.get('name'),
             fill: textFill,
             stroke: textStroke
           })

@@ -28,7 +28,7 @@ Modifying features works by using an `ol.interaction.Select` in combination with
       <div id="map"></div>
       <script type="text/javascript">
         var source = new ol.source.Vector({
-          url: '/data/layers/7day-M2.5.json',
+          url: '../data/layers/7day-M2.5.json',
           format: new ol.format.GeoJSON()
         });
         var style = new ol.style.Style({

@@ -42,7 +42,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
           new ol.layer.Vector({
             title: 'Earthquakes',
             source: new ol.source.Vector({
-              url: '/data/layers/7day-M2.5.json',
+              url: '../data/layers/7day-M2.5.json',
               format: new ol.format.GeoJSON()
             }),
             style: new ol.style.Style({
@@ -76,7 +76,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
       title: 'Earthquakes',
       source: new ol.source.ImageVector({
         source: new ol.source.Vector({
-          url: '/data/layers/7day-M2.5.json',
+          url: '../data/layers/7day-M2.5.json',
           format: new ol.format.GeoJSON()
         }),
         style: new ol.style.Style({
@@ -102,7 +102,7 @@ Let's examine the layer creation to get an idea of what is going on.
     title: 'Earthquakes',
     source: new ol.source.ImageVector({
       source: new ol.source.Vector({
-        url: '/data/layers/7day-M2.5.json',
+        url: '../data/layers/7day-M2.5.json',
         format: new ol.format.GeoJSON()
       }),
       style: new ol.style.Style({

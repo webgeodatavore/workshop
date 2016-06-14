@@ -21,7 +21,7 @@ With Python, you can run a local webserver by changing the root of the repositor
 
 By default, the content is available in your browser via http://localhost:8000
 
-If you have Node installed, install `http-server` with the command `npm install http-server`. Then, change the rpository root and run:
+If you have Node installed, install `http-server` with the command `npm install http-server`. Then, change the repository root and run:
 
     http-server
 
