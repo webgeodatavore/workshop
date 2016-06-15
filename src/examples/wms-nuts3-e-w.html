@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tiled WMS with Proj4js for UK</title>
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
+    <script src="libs/proj4.js"></script>
+    <script src="libs/27700.js"></script>
+    <script src="libs/ol.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="info"></div>
+    <script>
+      var extent = ol.proj.transformExtent([-8.74, 49.81, 1.84, 60.9], 'EPSG:4326', 'EPSG:27700');
+      var projection = ol.proj.get('EPSG:27700');
+      projection.setExtent(extent);
+
+      var layers = [
+        new ol.layer.Image({
+          extent: extent,
+          source: new ol.source.ImageWMS({
+            url: 'https://mapping.statistics.gov.uk/arcgis/services/NUTS3/NUTS3_JAN_2012_EW_BGC/MapServer/WmsServer',
+            attributions: '©  <a href="https://www.ons.gov.uk/">Office for National Statistics - 2012</a>',
+            params: {
+              'LAYERS': '0',
+              'FORMAT': 'image/png',
+              'VERSION': '1.1.1',
+              'STYLES=': '' // Dirty hack to bypass https://github.com/openlayers/ol3/issues/5430
+            }
+          })
+        })
+      ];
+
+      var map = new ol.Map({
+        controls: ol.control.defaults().extend([
+          new ol.control.ScaleLine()
+        ]),
+        layers: layers,
+        target: 'map',
+        view: new ol.View({
+          projection: projection,
+          center: ol.proj.fromLonLat([-1.4042, 50.9028], projection),
+          extent: extent,
+          zoom: 5
+        })
+      });
+
+      map.on('singleclick', function(evt) {
+        document.getElementById('info').innerHTML = '';
+        var viewResolution = /** @type {number} */ (map.getView().getResolution());
+        var url = layers[0].getSource().getGetFeatureInfoUrl(
+            evt.coordinate, viewResolution, 'EPSG:27700',
+            {'INFO_FORMAT': 'text/html'}); // application/vnd.ogc.wms_xml
+        if (url) {
+          document.getElementById('info').innerHTML =
+              '<iframe seamless src="' + url + '"></iframe>';
+        }
+      });
+    </script>
+  </body>
+</html>

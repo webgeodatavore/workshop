@@ -15,14 +15,15 @@ Let's take a look at the following code:
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
         width: 512px;
       }
     </style>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
     <title>OpenLayers 3 example</title>
   </head>
   <body>
@@ -42,8 +43,8 @@ Let's take a look at the following code:
         ],
         view: new ol.View({
           projection: 'EPSG:4326',
-          center: [0, 0],
-          zoom: 0,
+          center: [-1.4042, 50.9028],
+          zoom: 3,
           maxResolution: 0.703125
         })
       });
@@ -103,6 +104,66 @@ The url is the online resource of the WMS service, and params is an object liter
 1. Change your layer and source to have a single image instead of tiles. Look at the following API doc pages for hints: http://openlayers.org/en/master/apidoc/ol.layer.Image.html and http://openlayers.org/en/master/apidoc/ol.source.ImageWMS.html. Use the Network tab of your browser's developer tools to make sure a single image is requested and not 256x256 pixel tiles.
 
   ![A WMS as an image source](wms1.png)
+
+## Creating a layer with a projection
+
+Copy and paste the following code
+
+```
+    <script>
+      var extent = ol.proj.transformExtent([-8.74, 49.81, 1.84, 60.9], 'EPSG:4326', 'EPSG:27700');
+      var projection = ol.proj.get('EPSG:27700');
+      projection.setExtent(extent);
+
+      var layers = [
+        new ol.layer.Image({
+          extent: extent,
+          source: new ol.source.ImageWMS({
+            url: 'https://mapping.statistics.gov.uk/arcgis/services/NUTS3/NUTS3_JAN_2012_EW_BGC/MapServer/WmsServer',
+            attributions: '©  <a href="https://www.ons.gov.uk/">Office for National Statistics - 2012</a>',
+            params: {
+              'LAYERS': '0',
+              'FORMAT': 'image/png',
+              'VERSION': '1.1.1',
+              'STYLES=': '' // Dirty hack to bypass https://github.com/openlayers/ol3/issues/5430
+            }
+          })
+        })
+      ];
+
+      var map = new ol.Map({
+        controls: ol.control.defaults().extend([
+          new ol.control.ScaleLine()
+        ]),
+        layers: layers,
+        target: 'map',
+        view: new ol.View({
+          projection: projection,
+          center: ol.proj.fromLonLat([-1.4042, 50.9028], projection),
+          extent: extent,
+          zoom: 5
+        })
+      });
+
+    </script>
+```
+
+You should also reference proj4js and the EPSG code for the usual projection we want to use for UK (OSGB 1936 / British National Grid, EPSG code 27700). You should insert before application code the following:
+
+```
+    <script src="libs/proj4.js"></script>
+    <script src="libs/27700.js"></script>
+```
+
+![A WMS with projection](wms2.png)
+
+
+Proj4js is a JavaScript port of Proj, a library to manage projections in the browser. Openlayers only support Spherical Mercator (EPSG 3857) and WGS 84 (EPSG 4326). This external library avoid maintaining projections in OpenLayers core library.
+
+You may wonder why we already talk about projections. It's just because if you don't manage them, you will be too restricted for the workshop purpose.
+
+
+
 
 Having worked with dynamically rendered data from a Web Map Service, let's move
 on to learn about [cached tile services](cached.md).

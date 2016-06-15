@@ -10,7 +10,8 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -18,7 +19,7 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
       }
     </style>
     <title>OpenLayers 3 example</title>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>My Map</h1>
@@ -38,7 +39,7 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
         view: new ol.View({
           projection: 'EPSG:4326',
           center: [0, 0],
-          zoom: 0,
+          zoom: 1,
           maxResolution: 0.703125
         })
       });
@@ -57,7 +58,7 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
     new ol.layer.Vector({
       title: 'Earthquakes',
       source: new ol.source.Vector({
-        url: '/data/layers/7day-M2.5.json',
+        url: '../data/layers/7day-M2.5.json',
         format: new ol.format.GeoJSON()
       }),
       style: new ol.style.Style({
@@ -71,15 +72,22 @@ Let's go back to the WMS example to get a basic world map.  We'll add some featu
 
   ![Earthquake locations](vector1.png)
 
+1. Reuse the WMS projected code and like above add your own GeoJSON. In the `data` directory, you will find a file named `amenities-atm.geojson`. The result should look like below. Points style may change according to your mileage.
+
+  ![ATM amenities](vector2.png)
+
+
+
+
 ### A Closer Look
 
 Let's examine that vector layer creation to get an idea of what is going on.
 
-```js
+```jsh2geo.json
 new ol.layer.Vector({
   title: 'Earthquakes',
   source: new ol.source.Vector({
-    url: '/data/layers/7day-M2.5.json',
+    url: '../data/layers/7day-M2.5.json',
     format: new ol.format.GeoJSON()
   }),
   style: new ol.style.Style({

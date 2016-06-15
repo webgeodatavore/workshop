@@ -28,8 +28,8 @@ The [OpenStreetMap (OSM)](http://www.openstreetmap.org/) project is an effort to
           })
         ],
         view: new ol.View({
-          center: ol.proj.fromLonLat([126.97, 37.56]),
-          zoom: 9
+          center: ol.proj.fromLonLat([-1.4703, 50.9381]),
+          zoom: 16
         }),
         controls: ol.control.defaults({
           attributionOptions: {
@@ -135,4 +135,4 @@ By default the `ol.control.Attribution` adds an `i` (information) button that ca
 
 This removes the `i` button, and makes the attribution information always visible.
 
-Having mastered layers with publicly available cached tile sets, let's move on to working with [proprietary raster layers](proprietary.md).
+Having mastered layers with publicly available cached tile sets, let's move on to working with [vector layers](vector.md).

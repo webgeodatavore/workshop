@@ -14,7 +14,8 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -22,7 +23,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
       }
     </style>
     <title>OpenLayers 3 example</title>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>My Map</h1>
@@ -41,7 +42,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
           new ol.layer.Vector({
             title: 'Earthquakes',
             source: new ol.source.Vector({
-              url: '/data/layers/7day-M2.5.json',
+              url: '../data/layers/7day-M2.5.json',
               format: new ol.format.GeoJSON()
             }),
             style: new ol.style.Style({
@@ -54,8 +55,8 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
         ],
         view: new ol.View({
           projection: 'EPSG:4326',
-          center: [0, 0],
-          zoom: 0,
+          center: [-1.4042, 50.9028],
+          zoom: 3,
           maxResolution: 0.703125
         })
       });
@@ -75,7 +76,7 @@ Let's go back to the vector layer example to get earthquake data on top of a wor
       title: 'Earthquakes',
       source: new ol.source.ImageVector({
         source: new ol.source.Vector({
-          url: '/data/layers/7day-M2.5.json',
+          url: '../data/layers/7day-M2.5.json',
           format: new ol.format.GeoJSON()
         }),
         style: new ol.style.Style({
@@ -101,7 +102,7 @@ Let's examine the layer creation to get an idea of what is going on.
     title: 'Earthquakes',
     source: new ol.source.ImageVector({
       source: new ol.source.Vector({
-        url: '/data/layers/7day-M2.5.json',
+        url: '../data/layers/7day-M2.5.json',
         format: new ol.format.GeoJSON()
       }),
       style: new ol.style.Style({

@@ -10,7 +10,8 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/ol.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/ol.css" type="text/css">
     <style>
       #map {
         height: 256px;
@@ -18,7 +19,7 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
       }
     </style>
     <title>OpenLayers 3 example</title>
-    <script src="/loader.js" type="text/javascript"></script>
+    <script src="libs/ol.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>My Map</h1>
@@ -37,8 +38,8 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
         ],
         view: new ol.View({
           projection: 'EPSG:4326',
-          center: [0, 0],
-          zoom: 0,
+          center: [-1.4042, 50.9028],
+          zoom: 3,
           maxResolution: 0.703125
         })
       });
@@ -51,7 +52,7 @@ Let's take a look at a fully working example of an OpenLayers 3 map.
 
 1.  Make sure you've completed the [setup instructions](../) to install dependencies and get the debug server running.
 
-1.  Copy the text above into a new file called `map.html`, and save it in the root of the workshop directory.
+1.  Copy the text above into a new file called `map.html`, and save it in the examples directory.
 
 1.  Open the working map in your web browser: {{ book.workshopUrl }}/map.html
 

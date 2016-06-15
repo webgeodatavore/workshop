@@ -12,14 +12,15 @@ Modifying features works by using an `ol.interaction.Select` in combination with
   <!doctype html>
   <html lang="en">
     <head>
-      <link rel="stylesheet" href="/ol.css" type="text/css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="libs/ol.css" type="text/css">
       <style>
       #map {
         height: 256px;
         width: 512px;
       }
       </style>
-      <script src="/loader.js" type="text/javascript"></script>
+      <script src="libs/ol.js" type="text/javascript"></script>
       <title>OpenLayers 3 example</title>
     </head>
     <body>
@@ -27,7 +28,7 @@ Modifying features works by using an `ol.interaction.Select` in combination with
       <div id="map"></div>
       <script type="text/javascript">
         var source = new ol.source.Vector({
-          url: '/data/layers/7day-M2.5.json',
+          url: '../data/layers/7day-M2.5.json',
           format: new ol.format.GeoJSON()
         });
         var style = new ol.style.Style({

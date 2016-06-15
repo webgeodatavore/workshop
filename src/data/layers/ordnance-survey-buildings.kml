@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ordnance_survey_buildings" id="ordnance_survey_buildings">
+	<SimpleField name="@id" type="string"></SimpleField>
+	<SimpleField name="addr:city" type="string"></SimpleField>
+	<SimpleField name="addr:country" type="string"></SimpleField>
+	<SimpleField name="addr:housename" type="string"></SimpleField>
+	<SimpleField name="addr:postcode" type="string"></SimpleField>
+	<SimpleField name="addr:street" type="string"></SimpleField>
+	<SimpleField name="building" type="string"></SimpleField>
+	<SimpleField name="office" type="string"></SimpleField>
+</Schema>
+<Folder><name>ordnance_survey_buildings</name>
+  <Placemark>
+	<name>Ordnance Survey</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ordnance_survey_buildings">
+		<SimpleData name="@id">way/81111252</SimpleData>
+		<SimpleData name="addr:city">Southampton</SimpleData>
+		<SimpleData name="addr:country">GB</SimpleData>
+		<SimpleData name="addr:housename">Explorer House</SimpleData>
+		<SimpleData name="addr:postcode">SO16 0AS</SimpleData>
+		<SimpleData name="addr:street">Adanac Drive</SimpleData>
+		<SimpleData name="building">office</SimpleData>
+		<SimpleData name="office">government</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>clampToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>clampToGround</altitudeMode><coordinates>-1.4699056,50.9385846 -1.4704977,50.9385896 -1.4705013,50.9386182 -1.4705492,50.9386182 -1.4705523,50.9385864 -1.4706993,50.9385843 -1.4707087,50.9384774 -1.4707769,50.9384759 -1.4707713,50.9385846 -1.4709161,50.9385822 -1.4709753,50.9384933 -1.4710222,50.9383693 -1.4710315,50.9383274 -1.4710614,50.9381929 -1.4710485,50.9379988 -1.4709894,50.9378282 -1.4709117,50.9376741 -1.4707961,50.9376748 -1.4707965,50.9378042 -1.470661,50.9378083 -1.4704808,50.937805 -1.4704887,50.9376691 -1.4702556,50.9376674 -1.4702548,50.937634 -1.4701912,50.9376336 -1.4701911,50.9376676 -1.4698858,50.9376659 -1.4698863,50.9376309 -1.4698068,50.9376296 -1.4698061,50.9376638 -1.4695856,50.9376596 -1.4695838,50.9378141 -1.4701863,50.9378145 -1.4701862,50.9378414 -1.4702265,50.9378417 -1.4702268,50.9379243 -1.469994,50.9379257 -1.4699921,50.937899 -1.4699483,50.9378988 -1.4699507,50.9379258 -1.4696975,50.9379259 -1.4696936,50.938061 -1.4702849,50.9380606 -1.4702849,50.9381004 -1.4703175,50.9380998 -1.4703183,50.9381738 -1.4700914,50.9381741 -1.4700894,50.9381486 -1.4700324,50.9381486 -1.4700329,50.9381738 -1.4697959,50.9381735 -1.4697991,50.9383236 -1.4703772,50.9383252 -1.4703792,50.9383582 -1.4704161,50.9383602 -1.4704211,50.9384381 -1.4701878,50.9384351 -1.4701882,50.9384027 -1.4701422,50.9384017 -1.4701403,50.9384337 -1.4698965,50.9384335 -1.4699056,50.9385846</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ordnance_survey_buildings">
+		<SimpleData name="@id">way/142245493</SimpleData>
+		<SimpleData name="building">yes</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>clampToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>clampToGround</altitudeMode><coordinates>-1.4696501,50.937429 -1.4696551,50.9372288 -1.4693686,50.9372259 -1.4693636,50.9374261 -1.4696501,50.937429</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ordnance_survey_buildings">
+		<SimpleData name="@id">way/81111253</SimpleData>
+		<SimpleData name="building">yes</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><altitudeMode>clampToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>clampToGround</altitudeMode><coordinates>-1.4706013,50.9390906 -1.4706042,50.9389662 -1.470637,50.9389665 -1.4706403,50.9388233 -1.4701644,50.9388189 -1.4701583,50.9390812 -1.4702768,50.9390823 -1.4702755,50.9391366 -1.4703817,50.9391375 -1.4703828,50.9390886 -1.4706013,50.9390906</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

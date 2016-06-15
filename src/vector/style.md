@@ -6,7 +6,8 @@
   <!doctype html>
   <html lang="en">
     <head>
-      <link rel="stylesheet" href="/ol.css" type="text/css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="libs/ol.css" type="text/css">
       <style>
       #map {
         height: 256px;
@@ -14,7 +15,7 @@
       }
       </style>
       <title>OpenLayers 3 example</title>
-      <script src="/loader.js" type="text/javascript"></script>
+      <script src="libs/ol.js" type="text/javascript"></script>
     </head>
     <body>
       <h1>My Map</h1>
@@ -29,7 +30,7 @@
             new ol.layer.Vector({
               title: 'Buildings',
               source: new ol.source.Vector({
-                url: '/data/layers/buildings.kml',
+                url: '../data/layers/ordnance-survey-buildings.kml',
                 format: new ol.format.KML({
                   extractStyles: false
                 })
@@ -40,7 +41,7 @@
             })
           ],
           view: new ol.View({
-            center: ol.proj.fromLonLat([-122.79264450073244, 42.30975194250527]),
+            center: ol.proj.fromLonLat([-1.47126, 50.93812]),
             zoom: 16
           })
         });
@@ -68,7 +69,7 @@
     ];
 
     function style(feature, resolution) {
-      if (feature.get('shape_area') < 3000) {
+      if (feature.get('name') == 'Ordnance Survey') {
         return smallStyles;
       } else {
         return defaultStyles;
@@ -99,7 +100,7 @@
           stroke: stroke,
           text: new ol.style.Text({
             font: '12px Calibri,sans-serif',
-            text: feature.get('key'),
+            text: feature.get('name'),
             fill: textFill,
             stroke: textStroke
           })
