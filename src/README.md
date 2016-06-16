@@ -17,15 +17,15 @@ Assuming you already have an installed Python or Node
 
 With Python, you can run a local webserver by changing the root of the repository in a command prompt and running:
 
-    python -m SimpleHTTPServer
+    python -m SimpleHTTPServer 4000
 
-By default, the content is available in your browser via http://localhost:8000
+By default, the content is available in your browser via http://localhost:4000
 
 If you have Node installed, install `http-server` with the command `npm install http-server`. Then, change the repository root and run:
 
-    http-server
+    http-server -p 4000
 
-By default, the content is available in your browser via http://localhost:8080
+By default, the content is available in your browser via http://localhost:4000
 
 ## Overview
 

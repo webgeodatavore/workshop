@@ -69,7 +69,7 @@
     ];
 
     function style(feature, resolution) {
-      if (feature.get('shape_area') < 3000) {
+      if (feature.get('name') == 'Ordnance Survey') {
         return smallStyles;
       } else {
         return defaultStyles;
