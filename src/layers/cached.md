@@ -81,20 +81,20 @@ The OpenStreetMap tiles that we will be using are in a Mercator projection. Beca
 
 OpenLayers 3 includes transforms between Geographic (`'EPSG:4326'`) and Web Mercator (`'EPSG:3857'`) coordinate reference systems.  Because of this, we can use the `ol.proj.fromLonLat` function above without any extra work.  If you want to work with data in a different projection, you need to include some additional information before using the `ol.proj.*` functions.
 
-For example, if you wanted to work with data in the `'EPSG:21781'` coordinate reference system, you would include the following two script tags in your page:
+For example, if you wanted to work with data in the `'EPSG:27700'` coordinate reference system, you would include the following two script tags in your page:
 
 ```html
   <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js" type="text/javascript"></script>
-  <script src="http://epsg.io/21781-1753.js" type="text/javascript"></script>
+  <script src="http://epsg.io/27700.js" type="text/javascript"></script>
 ```
 
 Then in your application code, you could register this projection and set its validity extent as follows:
 
 ```js
-  // This creates a projection object for the EPSG:21781 projection
+  // This creates a projection object for the EPSG:27700 projection
   // and sets a "validity extent" in that projection object.
-  var projection = ol.proj.get('EPSG:21781');
-  projection.setExtent([485869.5728, 76443.1884, 837076.5648, 299941.7864]);
+  var projection = ol.proj.get('EPSG:27700');
+  projection.setExtent([-84667, -2957, 676354, 1242951]);
 ```
 
 The extent information can be looked up at http://epsg.io/, using the EPSG code.
